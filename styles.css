@@ -552,8 +552,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
-.h-28{
-  height: 7rem;
+.h-\[111px\]{
+  height: 111px;
 }
 
 .h-full{
@@ -566,14 +566,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[70px\]{
   height: 70px;
-}
-
-.h-\[11px\]{
-  height: 11px;
-}
-
-.h-\[111px\]{
-  height: 111px;
 }
 
 .min-h-\[572px\]{
@@ -808,16 +800,28 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (max-width: 639px){
-  .sm\:hidden{
-    display: none;
-  }
-
   .sm\:pr-4{
     padding-right: 1rem;
   }
 
   .sm\:pl-4{
     padding-left: 1rem;
+  }
+
+  .sm\:pl-2{
+    padding-left: 0.5rem;
+  }
+
+  .sm\:pr-2{
+    padding-right: 0.5rem;
+  }
+
+  .sm\:pl-3{
+    padding-left: 0.75rem;
+  }
+
+  .sm\:pr-3{
+    padding-right: 0.75rem;
   }
 
   .sm\:text-xs{
@@ -837,6 +841,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xs\:p-4{
     padding: 1rem;
+  }
+
+  .xs\:pl-3{
+    padding-left: 0.75rem;
+  }
+
+  .xs\:pr-3{
+    padding-right: 0.75rem;
   }
 
   .xs\:text-xs{
