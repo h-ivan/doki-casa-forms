@@ -9,10 +9,18 @@ module.exports = {
       'custom-dark-blue': '#000333',
       'custom-grey': '#878787',
     },
+    screens: {
+      '2xl': {'max': '1535px'},
+      'xl': {'max': '1279px'},
+      'lg': {'max': '1023px'},
+      'md': {'max': '767px'},
+      'sm': {'max': '639px'},
+      'xs': {'max': '424px'},
+    },
     extend: {
       fontFamily: {
         body: ['Lato']
-      }
+      },
     },
   },
   plugins: [],
