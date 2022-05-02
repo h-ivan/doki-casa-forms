@@ -33,30 +33,38 @@
 <div class="content-section">
     <form action="">
         <div class="content-container">
-            <div>
-                <h2 class="font-semibold text-xl mb-8 sm:text-base">
+            <div class="ml-3">
+                <h2 class="font-semibold text-xl mb-8 sm:text-sm">
                     Carica il Contratto di Locazione da registrare
                 </h2>
                 <div class="checkbox-container">
                     <div class="checkbox-content">
                         <input type="checkbox" id="checkbox-1" name="checkbox-1" value="checked"
-                               class="checkbox-input"/>
+                               class="checkbox-input cursor-pointer"/>
                         <div class="checkbox-div">
                             <img class="checkbox-img" width="12" height="9" src="../img/check.svg" alt="checkbox">
                         </div>
-                        <label for="checkbox-1" class="select-none">DokiCasa è già in possesso del Contratto firmato da
+                        <label for="checkbox-1" class="cursor-pointer sm:text-xs">DokiCasa è già in possesso del Contratto firmato da
                             registrare</label>
                     </div>
                 </div>
-                <div class="mx-3 h-[180px] rounded-2xl bg-custom-light-grey mt-4 flex items-center justify-center border-[1px] border-custom-grey">
+                <div class="h-[180px] sm:h-[86px] rounded-2xl bg-custom-light-grey mt-4 flex items-center justify-center border-[1px] border-custom-grey">
                     <div class="flex flex-col items-center">
                         <img class="mb-2.5" src="../img/arrow-up.svg" width="16" height="16" alt="Upload Arrow">
-                        <p class="text-custom-text-grey text-center">Carica qui uno o più allegati</p>
+                        <p class="text-custom-grey text-center sm:text-xs">Carica qui uno o più allegati</p>
                     </div>
                 </div>
             </div>
-            <button type="submit" class="secondary-button border-[1px] border-custom-grey mr-auto">Indietro</button>
-            <button type="submit" class="primary-button bg-custom-green ml-auto">Avanti</button>
+            <div class="h-[1px] bg-custom-grey max-w-[547px] w-full mx-auto"></div>
+            <div class="flex items-center ml-3">
+                <img class="" width="25" height="25" src="../img/info-icon.svg" alt="Info Icon">
+                <p class="ml-2.5 sm:text-xs text-custom-dark-grey">Carica uno o più Documenti in formato PDF o
+                    Immagine (PNG o JPEG).</p>
+            </div>
+            <div class="flex justify-between ml-3">
+                <button type="submit" class="secondary-button border-[1px] border-custom-grey mr-auto">Indietro</button>
+                <button type="submit" class="primary-button bg-custom-green ml-auto">Avanti</button>
+            </div>
         </div>
     </form>
     <div class="chat-button-container">

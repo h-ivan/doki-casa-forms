@@ -131,6 +131,12 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.09);
 }
 
+@media (max-width: 639px){
+  .content-container{
+    min-height: 472px;
+  }
+}
+
 @media (max-width: 424px){
   .content-container{
     padding: 1rem;
@@ -140,15 +146,12 @@
 .primary-button{
   cursor: pointer;
   border-radius: 1rem;
-  padding-top: 0.875rem;
-  padding-bottom: 0.875rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 3rem;
   padding-right: 3rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.09);
 }
 
@@ -157,22 +160,37 @@
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+@media (max-width: 424px){
+  .primary-button{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
 .secondary-button{
   cursor: pointer;
   border-radius: 1rem;
-  padding-top: 0.875rem;
-  padding-bottom: 0.875rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 3rem;
   padding-right: 3rem;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.09);
 }
 
 .secondary-button:hover{
-  --tw-brightness: brightness(1.05);
+  --tw-brightness: brightness(.75);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@media (max-width: 424px){
+  .secondary-button{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 
 .chat-button-container{
@@ -236,7 +254,7 @@
 }
 
 .checkbox-container{
-  padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 .checkbox-content{
@@ -267,8 +285,14 @@
   border-color: rgb(135 135 135 / var(--tw-border-opacity));
 }
 
+@media (max-width: 639px){
+  .checkbox-div{
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+}
+
 .checkbox-img{
-  pointer-events: none;
   display: none;
   height: 0.75rem;
   width: 0.75rem;
@@ -753,9 +777,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.5rem;
 }
 
-.mx-3{
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mb-8{
@@ -778,8 +802,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1rem;
 }
 
+.ml-auto{
+  margin-left: auto;
+}
+
 .mr-1{
   margin-right: 0.25rem;
+}
+
+.ml-3{
+  margin-left: 0.75rem;
 }
 
 .mb-2\.5{
@@ -794,16 +826,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
-.ml-auto{
-  margin-left: auto;
-}
-
 .flex{
   display: flex;
 }
 
 .h-\[180px\]{
   height: 180px;
+}
+
+.h-\[1px\]{
+  height: 1px;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .max-w-fit{
@@ -816,15 +852,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 48rem;
 }
 
+.max-w-\[547px\]{
+  max-width: 547px;
+}
+
 .flex-shrink-0{
   flex-shrink: 0;
 }
 
-.select-none{
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+.cursor-pointer{
+  cursor: pointer;
 }
 
 .flex-col{
@@ -837,6 +874,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-center{
   justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
 }
 
 .self-center{
@@ -866,6 +907,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(238 238 238 / var(--tw-bg-opacity));
 }
 
+.bg-custom-grey{
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 185 185 / var(--tw-bg-opacity));
+}
+
 .p-5{
   padding: 1.25rem;
 }
@@ -876,11 +922,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .text-right{
   text-align: right;
-}
-
-.text-lg{
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .text-xl{
@@ -901,7 +942,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(135 135 135 / var(--tw-text-opacity));
 }
 
+.text-custom-grey{
+  --tw-text-opacity: 1;
+  color: rgb(185 185 185 / var(--tw-text-opacity));
+}
+
 @media (max-width: 639px){
+  .sm\:h-\[86px\]{
+    height: 86px;
+  }
+
   .sm\:p-4{
     padding: 1rem;
   }
@@ -911,9 +961,9 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 1.25rem;
   }
 
-  .sm\:text-base{
-    font-size: 1rem;
-    line-height: 1.5rem;
+  .sm\:text-xs{
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 }
 
