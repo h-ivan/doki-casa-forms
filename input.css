@@ -4,6 +4,90 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.09);
 }
 
+.body {
+    @apply font-body h-screen grid grid-rows-[auto_1fr_auto] grid-cols-none;
+}
+
+.heading-container {
+    @apply h-[111px] md:h-[86px] mb-8 custom-shadow;
+}
+
+.heading-content {
+    @apply max-w-7xl px-8 flex justify-between items-center mx-auto h-full sm:px-4;
+}
+
+.doki-logo {
+    @apply xs:w-[93px] xs:h-[37px];
+}
+
+.heading-title {
+    @apply text-2xl text-custom-blue mb-1.5 md:hidden;
+}
+
+.heading-subtitle {
+    @apply font-semibold text-sm text-custom-dark-grey italic md:hidden;
+}
+
+.heading-title-small {
+    @apply text-sm text-custom-blue self-center hidden md:block xs:text-xs;
+}
+
+.content-section {
+    @apply max-w-[1234px] w-full px-8 mx-auto my-auto flex-1 sm:px-4;
+}
+
+.content-container {
+    @apply custom-shadow min-h-[572px] rounded-2xl mb-14 flex justify-between flex-col p-11 xs:p-4;
+}
+
+.primary-button {
+    @apply py-3.5 px-12 custom-shadow cursor-pointer text-custom-white rounded-2xl hover:brightness-105 transition-all;
+}
+
+.secondary-button {
+    @apply py-3.5 px-12 custom-shadow cursor-pointer rounded-2xl hover:brightness-105 transition-all;
+}
+
+.chat-button-container {
+    @apply flex mt-0 mr-auto mb-8 sm:mb-4;
+}
+
+.chat-button {
+    @apply cursor-pointer p-3 ml-auto custom-shadow w-[69px] h-[69px] rounded-full bg-[url('../img/chat-dots.svg')] bg-no-repeat bg-center;
+}
+
+.footer-container {
+    @apply bg-custom-dark-blue h-[70px] justify-items-center;
+}
+
+.footer-content {
+    @apply flex max-w-7xl px-7 xs:px-3 text-custom-white items-center h-full text-sm sm:text-xs;
+}
+
+.checkbox-container {
+    @apply p-4
+}
+
+.checkbox-content {
+    @apply flex items-center mr-4 mb-2;
+}
+
+.checkbox-input {
+    @apply opacity-0 absolute h-8 w-8
+}
+
+.checkbox-div {
+    @apply border-2 rounded-[4px] border-custom-dark-grey w-6 h-6 flex flex-shrink-0 justify-center items-center mr-2;
+}
+
+.checkbox-img {
+    @apply  hidden w-3 h-3 pointer-events-none;
+}
+
+.checkbox-container input:checked + div img {
+    @apply block;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

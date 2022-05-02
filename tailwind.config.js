@@ -7,7 +7,9 @@ module.exports = {
       'custom-dark-green': '#00A6BB',
       'custom-blue': '#005384',
       'custom-dark-blue': '#000333',
-      'custom-grey': '#878787',
+      'custom-light-grey': '#EEEEEE',
+      'custom-grey': '#B9B9B9',
+      'custom-dark-grey': '#878787'
     },
     screens: {
       '2xl': {'max': '1535px'},
