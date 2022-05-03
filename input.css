@@ -114,6 +114,25 @@
     hover:brightness-75
     xs:px-6
     xs:py-[5px]
+    border-[1px]
+    border-custom-grey
+}
+
+.save-button {
+    @apply
+    py-[8px]
+    px-[14px]
+    h-[50px]
+    rounded-3xl
+    hover:brightness-75
+    xs:px-6
+    xs:py-[5px]
+    mr-auto
+    border-[1px]
+    border-custom-grey
+    flex
+    text-custom-grey
+    items-center
 }
 
 .chat-button-container {
@@ -159,6 +178,8 @@
     sm:text-xs
 }
 
+/*CUSTOM CHECKBOX*/
+
 .checkbox-container {
     @apply mb-8
 }
@@ -184,15 +205,13 @@
     border-2
     rounded-[4px]
     border-custom-dark-grey
-    w-6
-    h-6
+    w-[20px]
+    h-[20px]
     flex
     flex-shrink-0
     justify-center
     items-center
     mr-2
-    sm:w-5
-    sm:h-5
 }
 
 .checkbox-img {
@@ -204,6 +223,104 @@
 
 .checkbox-container input:checked + div img {
     @apply block
+}
+
+/*CUSTOM RADIO*/
+
+.radio-container {
+    @apply mb-4
+}
+
+.radio-content {
+    @apply
+    flex
+    items-center
+    mr-4
+    mb-2
+}
+
+.radio-input {
+    @apply
+    opacity-0
+    absolute
+    h-8
+    w-8
+}
+
+.radio-div {
+    @apply
+    border-2
+    rounded-full
+    border-custom-dark-grey
+    w-[20px]
+    h-[20px]
+    flex
+    flex-shrink-0
+    justify-center
+    items-center
+    mr-2
+}
+
+.radio-img {
+    @apply
+    hidden
+    w-3
+    h-3
+}
+
+.radio-container input:checked + div img {
+    @apply block
+}
+
+.progress-bar {
+    grid-template-columns: repeat(20, 1fr);
+    @apply
+    grid
+    grid-rows-1
+    gap-0
+    h-8
+    mb-14
+    mt-4
+}
+
+.step {
+    @apply
+    w-full
+    h-full
+    border-r-[1px]
+    border-t-[1px]
+    border-b-[1px]
+    border-custom-grey
+    relative
+}
+
+.first-step {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    @apply
+    border-l-[1px]
+}
+
+.last-step {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.current-step {
+    @apply
+    absolute
+    border-r-[1px]
+    border-custom-grey
+    mr-[-1px]
+    top-[-25px]
+    right-0
+    text-custom-grey
+    pr-1
+}
+
+.step-complete {
+    background-color: rgba(0, 201, 183, 0.2);
+
 }
 
 @tailwind base;
