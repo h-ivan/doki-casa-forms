@@ -94,8 +94,9 @@
     @apply
     font-semibold
     text-xl
-    mb-8
+    mb-6
     sm:text-sm
+    sm:mb-4
 }
 
 .primary-button {
@@ -131,6 +132,7 @@
     px-[14px]
     h-[44px]
     sm:h-[32px]
+    sm:text-sm
     rounded-3xl
     hover:brightness-75
     xs:px-4
@@ -323,23 +325,23 @@
     border-r-[1px]
     border-custom-grey
     mr-[-1px]
-    top-[-25px]
+    top-[-20px]
     right-0
     text-custom-grey
     pr-1
+    text-sm
 }
 
 .step-complete {
     background-color: rgba(0, 201, 183, 0.2);
-
 }
 
 .text-input {
     @apply
     py-[4px]
     px-[14px]
-    h-[44px]
-    sm:h-[32px]
+    h-[43px]
+    sm:h-[36px]
     rounded-3xl
     xs:px-4
     xs:py-[2px]
@@ -347,13 +349,42 @@
     border-[1px]
     border-custom-grey
     flex
-    text-custom-grey
     items-center
-    w-72
+    outline-custom-dark-grey
+    mb-8
+    sm:mb-6
 }
 
 .text-input::placeholder {
-    @apply text-custom-light-grey
+    @apply
+    text-custom-light-grey
+    text-sm
+}
+
+.separator {
+    @apply
+    h-[1px]
+    bg-custom-grey
+    max-w-[547px]
+    md:max-w-[400px]
+    sm:max-w-[250px]
+    xs:max-w-[150px]
+    w-full
+    mx-auto
+}
+
+.text-info {
+    @apply
+    ml-2.5
+    sm:text-xs
+    text-custom-dark-grey
+}
+
+.info-container {
+    @apply
+    flex
+    items-center
+    my-4
 }
 
 @tailwind base;

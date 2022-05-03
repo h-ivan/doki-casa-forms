@@ -143,7 +143,7 @@
 }
 
 .content-title{
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 600;
@@ -151,6 +151,7 @@
 
 @media (max-width: 639px){
   .content-title{
+    margin-bottom: 1rem;
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
@@ -234,6 +235,8 @@
 @media (max-width: 639px){
   .save-button{
     height: 32px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -441,13 +444,15 @@
 
 .current-step{
   position: absolute;
-  top: -25px;
+  top: -20px;
   right: 0px;
   margin-right: -1px;
   border-right-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(185 185 185 / var(--tw-border-opacity));
   padding-right: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(185 185 185 / var(--tw-text-opacity));
 }
@@ -458,9 +463,9 @@
 
 .text-input{
   margin-right: auto;
+  margin-bottom: 2rem;
   display: flex;
-  height: 44px;
-  width: 18rem;
+  height: 43px;
   align-items: center;
   border-radius: 1.5rem;
   border-width: 1px;
@@ -470,13 +475,13 @@
   padding-bottom: 4px;
   padding-left: 14px;
   padding-right: 14px;
-  --tw-text-opacity: 1;
-  color: rgb(185 185 185 / var(--tw-text-opacity));
+  outline-color: #878787;
 }
 
 @media (max-width: 639px){
   .text-input{
-    height: 32px;
+    margin-bottom: 1.5rem;
+    height: 36px;
   }
 }
 
@@ -490,18 +495,72 @@
 }
 
 .text-input::-moz-placeholder{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(238 238 238 / var(--tw-text-opacity));
 }
 
 .text-input:-ms-input-placeholder{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(238 238 238 / var(--tw-text-opacity));
 }
 
 .text-input::placeholder{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   --tw-text-opacity: 1;
   color: rgb(238 238 238 / var(--tw-text-opacity));
+}
+
+.separator{
+  margin-left: auto;
+  margin-right: auto;
+  height: 1px;
+  width: 100%;
+  max-width: 547px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 185 185 / var(--tw-bg-opacity));
+}
+
+@media (max-width: 767px){
+  .separator{
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 639px){
+  .separator{
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 424px){
+  .separator{
+    max-width: 150px;
+  }
+}
+
+.text-info{
+  margin-left: 0.625rem;
+  --tw-text-opacity: 1;
+  color: rgb(135 135 135 / var(--tw-text-opacity));
+}
+
+@media (max-width: 639px){
+  .text-info{
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+.info-container{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 /*! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com*/
@@ -977,25 +1036,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.5rem;
 }
 
-.mx-auto{
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .mb-7{
   margin-bottom: 1.75rem;
 }
 
 .mt-\[-2px\]{
   margin-top: -2px;
-}
-
-.ml-2\.5{
-  margin-left: 0.625rem;
-}
-
-.ml-2{
-  margin-left: 0.5rem;
 }
 
 .mr-auto{
@@ -1012,6 +1058,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mb-8{
   margin-bottom: 2rem;
+}
+
+.ml-2\.5{
+  margin-left: 0.625rem;
+}
+
+.ml-2{
+  margin-left: 0.5rem;
 }
 
 .mr-4{
@@ -1034,10 +1088,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   display: flex;
 }
 
-.h-\[1px\]{
-  height: 1px;
-}
-
 .h-\[180px\]{
   height: 180px;
 }
@@ -1046,12 +1096,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 572px;
 }
 
-.w-full{
-  width: 100%;
+.min-h-\[775px\]{
+  min-height: 775px;
 }
 
-.max-w-\[547px\]{
-  max-width: 547px;
+.w-\[532px\]{
+  width: 532px;
 }
 
 .max-w-fit{
@@ -1105,11 +1155,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(185 185 185 / var(--tw-border-opacity));
 }
 
-.bg-custom-grey{
-  --tw-bg-opacity: 1;
-  background-color: rgb(185 185 185 / var(--tw-bg-opacity));
-}
-
 .bg-custom-green{
   --tw-bg-opacity: 1;
   background-color: rgb(0 201 183 / var(--tw-bg-opacity));
@@ -1146,6 +1191,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(185 185 185 / var(--tw-text-opacity));
 }
 
+@media (max-width: 767px){
+  .md\:w-\[300px\]{
+    width: 300px;
+  }
+}
+
 @media (max-width: 639px){
   .sm\:h-\[86px\]{
     height: 86px;
@@ -1155,8 +1206,16 @@ Ensure the default browser behavior of the `hidden` attribute.
     min-height: 323px;
   }
 
+  .sm\:min-h-\[427px\]{
+    min-height: 427px;
+  }
+
   .sm\:min-h-\[472px\]{
     min-height: 472px;
+  }
+
+  .sm\:w-full{
+    width: 100%;
   }
 
   .sm\:p-4{
