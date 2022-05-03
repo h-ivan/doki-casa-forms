@@ -123,7 +123,6 @@
 .content-container{
   margin-bottom: 3.5rem;
   display: flex;
-  min-height: 572px;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 1rem;
@@ -133,13 +132,27 @@
 
 @media (max-width: 639px){
   .content-container{
-    min-height: 472px;
+    margin-bottom: 2rem;
   }
 }
 
 @media (max-width: 424px){
   .content-container{
     padding: 1rem;
+  }
+}
+
+.content-title{
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+@media (max-width: 639px){
+  .content-title{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -199,14 +212,14 @@
 .save-button{
   margin-right: auto;
   display: flex;
-  height: 50px;
+  height: 44px;
   align-items: center;
   border-radius: 1.5rem;
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(185 185 185 / var(--tw-border-opacity));
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
   padding-left: 14px;
   padding-right: 14px;
   --tw-text-opacity: 1;
@@ -218,12 +231,18 @@
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+@media (max-width: 639px){
+  .save-button{
+    height: 32px;
+  }
+}
+
 @media (max-width: 424px){
   .save-button{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
 }
 
@@ -251,6 +270,13 @@
   background-repeat: no-repeat;
   padding: 0.75rem;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.09);
+}
+
+@media (max-width: 639px){
+  .chat-button{
+    height: 47px;
+    width: 47px;
+  }
 }
 
 .footer-container{
@@ -385,6 +411,12 @@
   gap: 0px
 }
 
+@media (max-width: 639px){
+  .progress-bar{
+    display: none;
+  }
+}
+
 .step{
   position: relative;
   height: 100%;
@@ -422,6 +454,54 @@
 
 .step-complete {
   background-color: rgba(0, 201, 183, 0.2);
+}
+
+.text-input{
+  margin-right: auto;
+  display: flex;
+  height: 44px;
+  width: 18rem;
+  align-items: center;
+  border-radius: 1.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(185 185 185 / var(--tw-border-opacity));
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 14px;
+  padding-right: 14px;
+  --tw-text-opacity: 1;
+  color: rgb(185 185 185 / var(--tw-text-opacity));
+}
+
+@media (max-width: 639px){
+  .text-input{
+    height: 32px;
+  }
+}
+
+@media (max-width: 424px){
+  .text-input{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+}
+
+.text-input::-moz-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(238 238 238 / var(--tw-text-opacity));
+}
+
+.text-input:-ms-input-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(238 238 238 / var(--tw-text-opacity));
+}
+
+.text-input::placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(238 238 238 / var(--tw-text-opacity));
 }
 
 /*! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com*/
@@ -910,10 +990,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: -2px;
 }
 
-.mb-8{
-  margin-bottom: 2rem;
-}
-
 .ml-2\.5{
   margin-left: 0.625rem;
 }
@@ -932,6 +1008,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mr-1{
   margin-right: 0.25rem;
+}
+
+.mb-8{
+  margin-bottom: 2rem;
 }
 
 .mr-4{
@@ -960,6 +1040,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[180px\]{
   height: 180px;
+}
+
+.min-h-\[572px\]{
+  min-height: 572px;
 }
 
 .w-full{
@@ -1048,15 +1132,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: right;
 }
 
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.font-semibold{
-  font-weight: 600;
-}
-
 .font-light{
   font-weight: 300;
 }
@@ -1076,18 +1151,26 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 86px;
   }
 
-  .sm\:p-4{
-    padding: 1rem;
+  .sm\:min-h-\[323px\]{
+    min-height: 323px;
   }
 
-  .sm\:text-sm{
-    font-size: 0.875rem;
-    line-height: 1.25rem;
+  .sm\:min-h-\[472px\]{
+    min-height: 472px;
+  }
+
+  .sm\:p-4{
+    padding: 1rem;
   }
 
   .sm\:text-xs{
     font-size: 0.75rem;
     line-height: 1rem;
+  }
+
+  .sm\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 

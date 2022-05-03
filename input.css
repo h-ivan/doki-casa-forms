@@ -80,15 +80,22 @@
 .content-container {
     @apply
     custom-shadow
-    min-h-[572px]
-    sm:min-h-[472px]
     rounded-2xl
     mb-14
+    sm:mb-8
     flex
     justify-between
     flex-col
     p-11
     xs:p-4
+}
+
+.content-title {
+    @apply
+    font-semibold
+    text-xl
+    mb-8
+    sm:text-sm
 }
 
 .primary-button {
@@ -120,13 +127,14 @@
 
 .save-button {
     @apply
-    py-[8px]
+    py-[4px]
     px-[14px]
-    h-[50px]
+    h-[44px]
+    sm:h-[32px]
     rounded-3xl
     hover:brightness-75
-    xs:px-6
-    xs:py-[5px]
+    xs:px-4
+    xs:py-[2px]
     mr-auto
     border-[1px]
     border-custom-grey
@@ -152,6 +160,8 @@
     custom-shadow
     w-[69px]
     h-[69px]
+    sm:w-[47px]
+    sm:h-[47px]
     rounded-full
     bg-[url('../img/chat-dots.svg')]
     bg-no-repeat
@@ -281,6 +291,7 @@
     h-8
     mb-14
     mt-4
+    sm:hidden
 }
 
 .step {
@@ -321,6 +332,28 @@
 .step-complete {
     background-color: rgba(0, 201, 183, 0.2);
 
+}
+
+.text-input {
+    @apply
+    py-[4px]
+    px-[14px]
+    h-[44px]
+    sm:h-[32px]
+    rounded-3xl
+    xs:px-4
+    xs:py-[2px]
+    mr-auto
+    border-[1px]
+    border-custom-grey
+    flex
+    text-custom-grey
+    items-center
+    w-72
+}
+
+.text-input::placeholder {
+    @apply text-custom-light-grey
 }
 
 @tailwind base;
