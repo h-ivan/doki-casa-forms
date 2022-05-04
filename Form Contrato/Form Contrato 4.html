@@ -36,14 +36,14 @@
         Salva e continua in seguito
     </button>
     <form action="">
-        <div class="content-container min-h-[572px] sm:min-h-[323px]">
+        <div class="content-container min-h-[965px] sm:min-h-[594px]">
             <div>
                 <div class="progress-bar">
-                    <div class="step first-step step-complete">
-                        <div class="current-step">#1</div>
+                    <div class="step first-step step-complete"></div>
+                    <div class="step step-complete"></div>
+                    <div class="step step-complete">
+                        <div class="current-step">#3</div>
                     </div>
-                    <div class="step"></div>
-                    <div class="step"></div>
                     <div class="step"></div>
                     <div class="step"></div>
                     <div class="step"></div>
@@ -63,36 +63,55 @@
                     <div class="step last-step"></div>
                 </div>
                 <h2 class="content-title">
-                    Viene affittato l’intero immobile o solo una parte?
+                    A quanto ammonta il canone mensile?
                 </h2>
-                <div class="radio-container">
-                    <div class="radio-content">
-                        <input type="radio" id="radio-1" name="radio-1" class="radio-input cursor-pointer"/>
-                        <div class="radio-div">
-                            <img class="radio-img" width="12" height="9" src="../img/check.svg" alt="radio button">
+                <input class="text-input" name="text-1" placeholder="Es: 900€" type="text">
+                <h2 class="content-title">
+                    In che modalità verrà pagato il canone?
+                </h2>
+                <div class="radio-group">
+                    <div class="radio-container">
+                        <div class="radio-content">
+                            <input type="radio" id="radio-1" name="radio-1" class="radio-input cursor-pointer"/>
+                            <div class="radio-div">
+                                <img class="radio-img" width="12" height="9" src="../img/check.svg" alt="radio button">
+                            </div>
+                            <label for="radio-1" class="cursor-pointer sm:text-xs">Tramite bonifico bancario</label>
                         </div>
-                        <label for="radio-1" class="cursor-pointer sm:text-xs">Il Contratto riguarda l’intero
-                            immobile</label>
+                    </div>
+                    <div class="radio-container">
+                        <div class="radio-content">
+                            <input type="radio" id="radio-2" name="radio-1" class="radio-input cursor-pointer"/>
+                            <div class="radio-div">
+                                <img class="radio-img" width="12" height="9" src="../img/check.svg" alt="radio button">
+                            </div>
+                            <label for="radio-2" class="cursor-pointer sm:text-xs">In contanti</label>
+                        </div>
+                    </div>
+                    <div class="radio-container">
+                        <div class="radio-content">
+                            <input type="radio" id="radio-3" name="radio-1" class="radio-input cursor-pointer"/>
+                            <div class="radio-div">
+                                <img class="radio-img" width="12" height="9" src="../img/check.svg" alt="radio button">
+                            </div>
+                            <label for="radio-3" class="cursor-pointer sm:text-xs">Tramite assegno o vaglia
+                                postale</label>
+                        </div>
                     </div>
                 </div>
-                <div class="radio-container">
-                    <div class="radio-content">
-                        <input type="radio" id="radio-2" name="radio-1" class="radio-input cursor-pointer"/>
-                        <div class="radio-div">
-                            <img class="radio-img" width="12" height="9" src="../img/check.svg" alt="radio button">
-                        </div>
-                        <label for="radio-2" class="cursor-pointer sm:text-xs">Il Contratto riguarda l’intero
-                            immobile</label>
-                    </div>
-                </div>
+                <h2 class="content-title">
+                    Indicare l'IBAN al quale effettuare il pagamento
+                </h2>
+                <input class="text-input w-[504px] sm:w-full" name="text-2" placeholder="Es: IT99 C 12345 67890 123456789012
+" type="text">
             </div>
             <div class="separator"></div>
-            <div class="flex items-center">
-                <img width="25" height="25" src="../img/info-icon.svg" alt="Info Icon">
-                <p class="text-info">Si può concedere in locazione l'intero immobile
-                    oppure solo una parte, come una stanza ad esempio.</p>
-            </div>
             <div class="info-container">
+                <img width="25" height="25" src="../img/info-icon.svg" alt="Info Icon">
+                <p class="text-info">Il canone di locazione non include le spese condominiali mensili, che saranno
+                    indicate successivamente.</p>
+            </div>
+            <div class="flex justify-between">
                 <button type="button" class="secondary-button mr-auto">Indietro</button>
                 <button type="submit" class="primary-button bg-custom-green ml-auto">Avanti</button>
             </div>

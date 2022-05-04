@@ -188,6 +188,7 @@
     h-full
     text-sm
     sm:text-xs
+    mx-auto
 }
 
 /*CUSTOM CHECKBOX*/
@@ -271,6 +272,10 @@
     justify-center
     items-center
     mr-2
+}
+
+.radio-group {
+    @apply mb-9
 }
 
 .radio-img {
@@ -371,13 +376,15 @@
     xs:max-w-[150px]
     w-full
     mx-auto
+    my-1
 }
 
 .text-info {
     @apply
-    ml-2.5
+    ml-4
     sm:text-xs
     text-custom-dark-grey
+    max-w-2xl
 }
 
 .info-container {
@@ -385,6 +392,16 @@
     flex
     items-center
     my-4
+}
+
+.info-small {
+    @apply
+    text-sm
+    sm:text-xs
+    text-custom-dark-grey
+    max-w-[560px]
+    font-light
+    mb-6
 }
 
 @tailwind base;

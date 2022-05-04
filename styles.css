@@ -290,6 +290,8 @@
 }
 
 .footer-content{
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   height: 100%;
   max-width: 80rem;
@@ -392,6 +394,10 @@
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(135 135 135 / var(--tw-border-opacity));
+}
+
+.radio-group{
+  margin-bottom: 2.25rem;
 }
 
 .radio-img{
@@ -518,6 +524,8 @@
 .separator{
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
   height: 1px;
   width: 100%;
   max-width: 547px;
@@ -544,7 +552,8 @@
 }
 
 .text-info{
-  margin-left: 0.625rem;
+  margin-left: 1rem;
+  max-width: 42rem;
   --tw-text-opacity: 1;
   color: rgb(135 135 135 / var(--tw-text-opacity));
 }
@@ -561,6 +570,23 @@
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
+}
+
+.info-small{
+  margin-bottom: 1.5rem;
+  max-width: 560px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 300;
+  --tw-text-opacity: 1;
+  color: rgb(135 135 135 / var(--tw-text-opacity));
+}
+
+@media (max-width: 639px){
+  .info-small{
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
 
 /*! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com*/
@@ -1100,8 +1126,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 775px;
 }
 
+.min-h-\[965px\]{
+  min-height: 965px;
+}
+
+.min-h-\[886px\]{
+  min-height: 886px;
+}
+
+.min-h-\[801px\]{
+  min-height: 801px;
+}
+
+.min-h-\[700px\]{
+  min-height: 700px;
+}
+
+.min-h-\[760px\]{
+  min-height: 760px;
+}
+
 .w-\[532px\]{
   width: 532px;
+}
+
+.w-\[504px\]{
+  width: 504px;
 }
 
 .max-w-fit{
@@ -1210,8 +1260,20 @@ Ensure the default browser behavior of the `hidden` attribute.
     min-height: 427px;
   }
 
+  .sm\:min-h-\[594px\]{
+    min-height: 594px;
+  }
+
+  .sm\:min-h-\[531px\]{
+    min-height: 531px;
+  }
+
   .sm\:min-h-\[472px\]{
     min-height: 472px;
+  }
+
+  .sm\:min-h-\[528px\]{
+    min-height: 528px;
   }
 
   .sm\:w-full{
