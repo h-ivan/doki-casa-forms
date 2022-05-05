@@ -1110,6 +1110,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
+.mb-0{
+  margin-bottom: 0px;
+}
+
+.mb-1{
+  margin-bottom: 0.25rem;
+}
+
 .flex{
   display: flex;
 }
@@ -1134,16 +1142,32 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 886px;
 }
 
-.min-h-\[801px\]{
-  min-height: 801px;
-}
-
-.min-h-\[700px\]{
-  min-height: 700px;
-}
-
 .min-h-\[760px\]{
   min-height: 760px;
+}
+
+.min-h-\[571px\]{
+  min-height: 571px;
+}
+
+.min-h-\[681px\]{
+  min-height: 681px;
+}
+
+.min-h-\[844px\]{
+  min-height: 844px;
+}
+
+.min-h-\[762px\]{
+  min-height: 762px;
+}
+
+.min-h-\[710px\]{
+  min-height: 710px;
+}
+
+.min-h-\[864px\]{
+  min-height: 864px;
 }
 
 .w-\[532px\]{
@@ -1268,12 +1292,32 @@ Ensure the default browser behavior of the `hidden` attribute.
     min-height: 531px;
   }
 
+  .sm\:min-h-\[528px\]{
+    min-height: 528px;
+  }
+
   .sm\:min-h-\[472px\]{
     min-height: 472px;
   }
 
-  .sm\:min-h-\[528px\]{
-    min-height: 528px;
+  .sm\:min-h-\[334px\]{
+    min-height: 334px;
+  }
+
+  .sm\:min-h-\[493px\]{
+    min-height: 493px;
+  }
+
+  .sm\:min-h-\[498px\]{
+    min-height: 498px;
+  }
+
+  .sm\:min-h-\[337px\]{
+    min-height: 337px;
+  }
+
+  .sm\:min-h-\[483px\]{
+    min-height: 483px;
   }
 
   .sm\:w-full{
