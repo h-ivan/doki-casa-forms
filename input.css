@@ -92,6 +92,7 @@
 
 .content-title {
     @apply
+    block
     font-semibold
     text-xl
     mb-6
@@ -122,6 +123,17 @@
     hover:brightness-75
     xs:px-6
     xs:py-[5px]
+    border-[1px]
+    border-custom-grey
+}
+
+.grey-box {
+    @apply
+    rounded-[18px]
+    bg-custom-light-grey
+    flex
+    items-center
+    justify-center
     border-[1px]
     border-custom-grey
 }
@@ -376,7 +388,7 @@
     xs:max-w-[150px]
     w-full
     mx-auto
-    my-1
+    my-4
 }
 
 .text-info {
@@ -402,6 +414,15 @@
     max-w-[560px]
     font-light
     mb-6
+}
+
+.label-small {
+    @apply
+    text-sm
+    sm:text-xs
+    text-custom-dark-grey
+    font-light
+    mb-1
 }
 
 @tailwind base;
