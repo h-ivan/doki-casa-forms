@@ -127,6 +127,22 @@
     border-custom-grey
 }
 
+.blue-button {
+    @apply
+    py-[10px]
+    px-6
+    custom-shadow
+    cursor-pointer
+    text-custom-white
+    rounded-2xl
+    hover:brightness-105
+    xs:px-6
+    xs:py-[5px]
+    flex
+    items-center
+    mb-4
+}
+
 .grey-box {
     @apply
     rounded-[18px]
@@ -397,6 +413,7 @@
     sm:text-xs
     text-custom-dark-grey
     max-w-2xl
+    my-4
 }
 
 .info-container {
