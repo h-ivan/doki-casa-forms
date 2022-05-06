@@ -442,6 +442,35 @@
     mb-1
 }
 
+.badge {
+    @apply
+    flex
+    bg-custom-grey
+}
+
+.custom-select {
+    background-position-x: 97% !important;
+    @apply
+    bg-[url('../img/select-arrow.svg')]
+    bg-no-repeat
+    bg-right
+    appearance-none
+    py-[4px]
+    px-[14px]
+    h-[43px]
+    sm:h-[36px]
+    rounded-3xl
+    xs:px-4
+    xs:py-[2px]
+    mr-auto
+    border-[1px]
+    border-custom-grey
+    outline-custom-dark-grey
+    mb-8
+    sm:mb-6
+
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
