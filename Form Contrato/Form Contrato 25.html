@@ -36,7 +36,7 @@
         Salva e continua in seguito
     </button>
     <form action="">
-        <div class="content-container min-h-[476px] sm:min-h-[240px]">
+        <div class="content-container min-h-[569px] sm:min-h-[350px]">
             <div>
                 <div class="progress-bar">
                     <div class="step first-step step-complete"></div>
@@ -53,23 +53,45 @@
                     <div class="step step-complete"></div>
                     <div class="step step-complete"></div>
                     <div class="step step-complete"></div>
+                    <div class="step step-complete"></div>
+                    <div class="step step-complete"></div>
+                    <div class="step step-complete"></div>
+                    <div class="step step-complete"></div>
                     <div class="step step-complete">
-                        <div class="current-step">#15</div>
+                        <div class="current-step">#19</div>
                     </div>
-                    <div class="step"></div>
-                    <div class="step"></div>
-                    <div class="step"></div>
-                    <div class="step"></div>
                     <div class="step last-step"></div>
                 </div>
-                <label class="content-title">
-                    Dati Pertinenze
+                <label for="radio-group" class="content-title">
+                    Vuoi aggiungere qualche specifica al Contratto?
                 </label>
-                <label class="blue-button bg-custom-blue w-[230px]" for="file-button">
-                    <img class="mr-3" src="../img/plus-icon.svg" width="22" height="22" alt="plus icon">
-                    Aggiungi Pertinenza
-                    <input class="hidden" type="file" id="file-button">
-                </label>
+                <div id="radio-group" class="radio-group">
+                    <div class="radio-container">
+                        <div class="radio-content">
+                            <input type="radio" id="radio-1" name="radio-1" class="radio-input cursor-pointer"/>
+                            <div class="radio-div">
+                                <img class="radio-img" width="12" height="9" src="../img/check.svg" alt="radio button">
+                            </div>
+                            <label for="radio-1" class="cursor-pointer sm:text-xs">Si</label>
+                        </div>
+                    </div>
+                    <div class="radio-container">
+                        <div class="radio-content">
+                            <input type="radio" id="radio-2" name="radio-1" class="radio-input cursor-pointer"/>
+                            <div class="radio-div">
+                                <img class="radio-img" width="12" height="9" src="../img/check.svg" alt="radio button">
+                            </div>
+                            <label for="radio-2" class="cursor-pointer sm:text-xs">No</label>
+                        </div>
+                    </div>
+                    <label for="text-1" class="content-title">
+                        Inserisci le specifiche
+                    </label>
+                    <textarea class="text-input mb-4 w-[510px] h-[180px] rounded-[18px] sm:w-full" name="text-1"
+                              id="text-1"
+                              placeholder="Es.: vengono consegnate 2 copie delle chiavi di casa"
+                              type="text"></textarea>
+                </div>
             </div>
             <div class="info-container">
                 <button type="button" class="secondary-button mr-auto">Indietro</button>

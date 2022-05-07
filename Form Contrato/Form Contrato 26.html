@@ -36,7 +36,7 @@
         Salva e continua in seguito
     </button>
     <form action="">
-        <div class="content-container min-h-[476px] sm:min-h-[240px]">
+        <div class="content-container min-h-[690px] sm:min-h-[450px]">
             <div>
                 <div class="progress-bar">
                     <div class="step first-step step-complete"></div>
@@ -53,27 +53,36 @@
                     <div class="step step-complete"></div>
                     <div class="step step-complete"></div>
                     <div class="step step-complete"></div>
-                    <div class="step step-complete">
-                        <div class="current-step">#15</div>
+                    <div class="step step-complete"></div>
+                    <div class="step step-complete"></div>
+                    <div class="step step-complete"></div>
+                    <div class="step step-complete"></div>
+                    <div class="step step-complete"></div>
+                    <div class="step step-complete last-step">
+                        <div class="current-step mr-[10px]">#20</div>
                     </div>
-                    <div class="step"></div>
-                    <div class="step"></div>
-                    <div class="step"></div>
-                    <div class="step"></div>
-                    <div class="step last-step"></div>
                 </div>
-                <label class="content-title">
-                    Dati Pertinenze
+                <label for="text-1" class="content-title">
+                    Luogo di sottoscrizione del Contratto
                 </label>
-                <label class="blue-button bg-custom-blue w-[230px]" for="file-button">
-                    <img class="mr-3" src="../img/plus-icon.svg" width="22" height="22" alt="plus icon">
-                    Aggiungi Pertinenza
-                    <input class="hidden" type="file" id="file-button">
+                <input class="text-input w-[491px] sm:w-full" name="text-1" id="text-1"
+                       placeholder="Es: Torino" type="text">
+                <label for="text-1" class="content-title">
+                    Luogo di sottoscrizione del Contratto
                 </label>
+                <input class="text-input w-[491px] sm:w-full" name="text-1" id="text-1"
+                       placeholder="Es: 01/01/22" type="text">
+            </div>
+            <div class="separator"></div>
+            <div class="flex items-center">
+                <img width="25" height="25" src="../img/info-icon.svg" alt="Info Icon">
+                <p class="text-info">I dati catastali di un immobile identificano una determinata proprietà, censita al
+                    Catasto. Sono contenuti nella visura catastale, un documento rilasciato dall’Agenzia delle Entrate.
+                </p>
             </div>
             <div class="info-container">
                 <button type="button" class="secondary-button mr-auto">Indietro</button>
-                <button type="submit" class="primary-button bg-custom-green ml-auto">Avanti</button>
+                <button type="submit" class="primary-button bg-custom-green ml-auto">Crea contratto</button>
             </div>
         </div>
     </form>

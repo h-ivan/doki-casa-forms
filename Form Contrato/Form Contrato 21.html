@@ -36,7 +36,7 @@
         Salva e continua in seguito
     </button>
     <form action="">
-        <div class="content-container min-h-[1003px] sm:min-h-[593px]">
+        <div class="content-container min-h-[1103px] sm:min-h-[693px]">
             <div>
                 <div class="progress-bar">
                     <div class="step first-step step-complete"></div>
@@ -53,50 +53,86 @@
                     <div class="step step-complete"></div>
                     <div class="step step-complete"></div>
                     <div class="step step-complete"></div>
+                    <div class="step step-complete"></div>
                     <div class="step step-complete">
-                        <div class="current-step">#15</div>
+                        <div class="current-step">#16</div>
                     </div>
-                    <div class="step"></div>
                     <div class="step"></div>
                     <div class="step"></div>
                     <div class="step"></div>
                     <div class="step last-step"></div>
                 </div>
                 <label class="content-title">
-                    Dati Pertinenze
+                    Dati Locatore <span class="font-light text-custom-dark-grey">Proprietario</span>
                 </label>
                 <div class="badge w-[491px] sm:w-full">
-                    <label>Pertinenza 1</label>
+                    <label>Anagrafica 1</label>
                     <img class="cursor-pointer" src="../img/x-icon.svg" width="18" height="18" alt="close button">
                 </div>
-                <label for="select-1" class="content-title">
-                    Tipologia Pertinenza
+                <label for="radio-group" class="content-title">
+                    Scegli la tipologia
                 </label>
-                <div class="relative">
-                    <select class="w-[491px] sm:w-full custom-select" id="select-1">
-                        <option value="option-1">option 1</option>
-                        <option value="option-2">option 2</option>
-                    </select>
+                <div id="radio-group" class="radio-group">
+                    <div class="radio-container">
+                        <div class="radio-content">
+                            <input type="radio" id="radio-1" name="radio-1" class="radio-input cursor-pointer"/>
+                            <div class="radio-div">
+                                <img class="radio-img" width="12" height="9" src="../img/check.svg" alt="radio button">
+                            </div>
+                            <label for="radio-1" class="cursor-pointer sm:text-xs">Persona fisica</label>
+                        </div>
+                    </div>
+                    <div class="radio-container">
+                        <div class="radio-content">
+                            <input type="radio" id="radio-2" name="radio-1" class="radio-input cursor-pointer"/>
+                            <div class="radio-div">
+                                <img class="radio-img" width="12" height="9" src="../img/check.svg" alt="radio button">
+                            </div>
+                            <label for="radio-2" class="cursor-pointer sm:text-xs">Persona giuridica / Società /
+                                Associazione</label>
+                        </div>
+                    </div>
+                    <div class="radio-container">
+                        <div class="radio-content">
+                            <input type="radio" id="radio-3" name="radio-1" class="radio-input cursor-pointer"/>
+                            <div class="radio-div">
+                                <img class="radio-img" width="12" height="9" src="../img/check.svg" alt="radio button">
+                            </div>
+                            <label for="radio-3" class="cursor-pointer sm:text-xs">Ditta individuale /
+                                Professionista</label>
+                        </div>
+                    </div>
+                    <div class="radio-container">
+                        <div class="radio-content">
+                            <input type="radio" id="radio-4" name="radio-1" class="radio-input cursor-pointer"/>
+                            <div class="radio-div">
+                                <img class="radio-img" width="12" height="9" src="../img/check.svg" alt="radio button">
+                            </div>
+                            <label for="radio-4" class="cursor-pointer sm:text-xs">Delegato</label>
+                        </div>
+                    </div>
                 </div>
                 <label for="text-1" class="content-title">
-                    Foglio
+                    Nome e Cognome
                 </label>
-                <input class="text-input w-[491px] sm:w-full" name="text-3" id="text-1" placeholder="Es.: 10"
-                       type="text">
+                <input class="text-input w-[491px] sm:w-full" name="text-3" id="text-1"
+                       placeholder="Es.: Mario Rossi" type="text">
                 <label for="text-2" class="content-title">
-                    Mappale/Particella
+                    Indirizzo di Residenza
                 </label>
-                <input class="text-input w-[491px] sm:w-full" name="text-4" id="text-2" placeholder="Es.: 3"
+                <input class="text-input w-[491px] sm:w-full" name="text-4" id="text-2"
+                       placeholder="Es.: Via Mazzini, 30 - 51015 Milano (MI)"
                        type="text">
                 <label for="text-3" class="content-title">
-                    Subalterno
+                    Codice Fiscale
                 </label>
-                <input class="text-input w-[491px] sm:w-full" name="text-5" id="text-3" placeholder="Es.: 4"
+                <input class="text-input w-[491px] sm:w-full" name="text-5" id="text-3"
+                       placeholder="Es: MRTNFL87EO5L219G"
                        type="text">
             </div>
             <button class="add-button mb-7">
                 <img class="mt-[2px]" src="../img/plus-icon-green.svg" width="25" height="25" alt="add icon">
-                Aggiungi Pertinenza
+                Aggiungi Locatore
             </button>
             <div class="info-container">
                 <button type="button" class="secondary-button mr-auto">Indietro</button>
