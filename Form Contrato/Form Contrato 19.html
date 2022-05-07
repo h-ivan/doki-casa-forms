@@ -65,7 +65,10 @@
                 <label class="content-title">
                     Dati Pertinenze
                 </label>
-
+                <div class="badge w-[491px] sm:w-full">
+                    <label>Pertinenza 1</label>
+                    <img class="cursor-pointer" src="../img/x-icon.svg" width="18" height="18" alt="close button">
+                </div>
                 <label for="select-1" class="content-title">
                     Tipologia Pertinenza
                 </label>
@@ -79,26 +82,23 @@
                 <label for="text-3" class="content-title">
                     Foglio
                 </label>
-                <input class="text-input w-[491px] sm:w-full" name="text-3" id="text-3" placeholder="Es.: 123"
+                <input class="text-input w-[491px] sm:w-full" name="text-3" id="text-3" placeholder="Es.: 10"
                        type="text">
                 <label for="text-4" class="content-title">
                     Mappale/Particella
                 </label>
-                <input class="text-input w-[491px] sm:w-full" name="text-4" id="text-4" placeholder="Es.: 154"
+                <input class="text-input w-[491px] sm:w-full" name="text-4" id="text-4" placeholder="Es.: 3"
                        type="text">
                 <label for="text-5" class="content-title">
                     Subalterno
                 </label>
-                <input class="text-input w-[491px] sm:w-full" name="text-5" id="text-5" placeholder="Es.: 438,12€"
+                <input class="text-input w-[491px] sm:w-full" name="text-5" id="text-5" placeholder="Es.: 4"
                        type="text">
             </div>
-            <div class="separator"></div>
-            <div class="flex items-center">
-                <img width="25" height="25" src="../img/info-icon.svg" alt="Info Icon">
-                <p class="text-info">I dati catastali di un immobile identificano una determinata proprietà, censita al
-                    Catasto. Sono contenuti nella visura catastale, un documento rilasciato dall’Agenzia delle Entrate.
-                </p>
-            </div>
+            <button class="add-button mb-7">
+                <img class="mt-[2px]" src="../img/plus-icon-green.svg" width="25" height="25" alt="add icon">
+                Aggiungi Pertinenza
+            </button>
             <div class="info-container">
                 <button type="button" class="secondary-button mr-auto">Indietro</button>
                 <button type="submit" class="primary-button bg-custom-green ml-auto">Avanti</button>

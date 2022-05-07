@@ -291,6 +291,45 @@
   }
 }
 
+.add-button{
+  margin-right: auto;
+  display: flex;
+  height: 36px;
+  align-items: center;
+  border-radius: 1.5rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 201 183 / var(--tw-border-opacity));
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 20px;
+  padding-right: 20px;
+  --tw-text-opacity: 1;
+  color: rgb(0 201 183 / var(--tw-text-opacity));
+}
+
+.add-button:hover{
+  --tw-brightness: brightness(.75);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@media (max-width: 639px){
+  .add-button{
+    height: 32px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (max-width: 424px){
+  .add-button{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+}
+
 .chat-button-container{
   margin-top: 0px;
   margin-right: auto;
@@ -650,9 +689,21 @@
 }
 
 .badge{
+  margin-right: auto;
+  margin-bottom: 2rem;
   display: flex;
+  height: 34px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 18px;
   --tw-bg-opacity: 1;
-  background-color: rgb(185 185 185 / var(--tw-bg-opacity));
+  background-color: rgb(238 238 238 / var(--tw-bg-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(0 83 132 / var(--tw-text-opacity));
 }
 
 .custom-select {
@@ -1200,6 +1251,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mr-3{
   margin-right: 0.75rem;
+}
+
+.mt-\[2px\]{
+  margin-top: 2px;
 }
 
 .mb-8{
