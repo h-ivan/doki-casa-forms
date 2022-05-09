@@ -5,12 +5,23 @@
 }
 
 .body {
+    line-height: 1.3rem;
     @apply
     font-body
     h-screen
     grid
     grid-rows-[auto_1fr_auto]
     grid-cols-none
+}
+
+.link {
+    @apply
+    text-custom-blue
+}
+.link:hover {
+    @apply
+    brightness-125
+    underline
 }
 
 .heading-container {
@@ -41,7 +52,7 @@
 
 .heading-title {
     @apply
-    text-2xl
+    text-[26px]
     text-custom-blue
     mb-1.5
     md:hidden
@@ -98,10 +109,24 @@
     mb-6
     sm:text-sm
     sm:mb-4
+    text-[22px]
+}
+
+.content-title-normal {
+    @apply
+    block
+    font-[500]
+    text-xl
+    mb-2
+    sm:text-sm
+    sm:mb-4
+    text-[18px]
 }
 
 .primary-button {
     @apply
+    text-[18px]
+    md:text-[16px]
     py-[10px]
     px-12
     custom-shadow
@@ -115,6 +140,8 @@
 
 .secondary-button {
     @apply
+    text-[18px]
+    md:text-[16px]
     py-[10px]
     px-12
     custom-shadow
@@ -297,6 +324,7 @@
     items-center
     mr-4
     mb-2
+    text-[18px]
 }
 
 .radio-input {
@@ -390,6 +418,7 @@
 
 .text-input {
     @apply
+    text-[18px]
     py-[4px]
     px-[14px]
     h-[43px]
@@ -410,7 +439,7 @@
 .text-input::placeholder {
     @apply
     text-custom-light-grey
-    text-sm
+    text-[18px]
 }
 
 .separator {
@@ -431,8 +460,9 @@
     ml-4
     sm:text-xs
     text-custom-dark-grey
-    max-w-2xl
+    max-w-[806px]
     my-4
+    text-[17px]
 }
 
 .info-container {
@@ -444,17 +474,16 @@
 
 .info-small {
     @apply
-    text-sm
+    text-[14px]
     sm:text-xs
     text-custom-dark-grey
-    max-w-[560px]
+    max-w-[600px]
     font-light
     mb-6
 }
 
-.label-small {
+.custom-label {
     @apply
-    text-sm
     sm:text-xs
     text-custom-dark-grey
     font-light
@@ -477,6 +506,14 @@
     mb-8
 }
 
+.password-input {
+    background-position-x: 97% !important;
+    @apply
+    bg-[url('../img/password-icon.svg')]
+    bg-no-repeat
+    bg-right
+}
+
 .custom-select {
     background-position-x: 97% !important;
     @apply
@@ -497,6 +534,14 @@
     outline-custom-dark-grey
     mb-8
     sm:mb-6
+}
+
+.content-flex-wrapper {
+    @apply
+    grid
+    grid-flow-col
+    auto-cols-fr
+    gap-8
 
 }
 
