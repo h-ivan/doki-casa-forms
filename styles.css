@@ -5,12 +5,18 @@
 }
 
 .body {
-  line-height: 1.3rem;
+  line-height: 1.4rem;
   display: grid;
   height: 100vh;
   grid-template-columns: none;
   grid-template-rows: auto 1fr auto;
   font-family: Lato
+}
+
+@media (max-width: 639px){
+  .body{
+    line-height: 1.25rem;
+  }
 }
 
 .link{
@@ -799,6 +805,69 @@
   gap: 2rem;
 }
 
+@media (max-width: 767px){
+  .content-flex-wrapper{
+    grid-auto-flow: row;
+  }
+}
+
+.info-container-grey-bg{
+  margin-bottom: 2rem;
+  border-radius: 18px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 238 238 / var(--tw-bg-opacity));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 18px;
+}
+
+@media (max-width: 639px){
+  .info-container-grey-bg{
+    font-size: 14px;
+  }
+}
+
+.documento-container{
+  margin-bottom: 3.5rem;
+  display: flex;
+  min-height: 266px;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 1rem;
+  padding: 2.75rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.09);
+}
+
+@media (max-width: 1023px){
+  .documento-container{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px){
+  .documento-container{
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 639px){
+  .documento-container{
+    margin-bottom: 2rem;
+    min-height: 140px;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (max-width: 424px){
+  .documento-container{
+    padding: 1rem;
+  }
+}
+
 /*! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com*/
 
 /*
@@ -1510,6 +1579,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   cursor: pointer;
 }
 
+.flex-row{
+  flex-direction: row;
+}
+
 .flex-col{
   flex-direction: column;
 }
@@ -1612,13 +1685,31 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(0 83 132 / var(--tw-text-opacity));
 }
 
+@media (max-width: 1023px){
+  .lg\:flex-col{
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 767px){
+  .md\:order-first{
+    order: -9999;
+  }
+
   .md\:w-\[300px\]{
     width: 300px;
+  }
+
+  .md\:flex-row{
+    flex-direction: row;
   }
 }
 
 @media (max-width: 639px){
+  .sm\:order-first{
+    order: -9999;
+  }
+
   .sm\:h-\[120px\]{
     height: 120px;
   }
@@ -1723,8 +1814,22 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: 100%;
   }
 
+  .sm\:flex-col{
+    flex-direction: column;
+  }
+
   .sm\:p-4{
     padding: 1rem;
+  }
+
+  .sm\:px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .sm\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .sm\:text-xs{
@@ -1735,6 +1840,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .sm\:text-\[14px\]{
+    font-size: 14px;
   }
 }
 

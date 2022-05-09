@@ -5,13 +5,14 @@
 }
 
 .body {
-    line-height: 1.3rem;
+    line-height: 1.4rem;
     @apply
     font-body
     h-screen
     grid
     grid-rows-[auto_1fr_auto]
     grid-cols-none
+    sm:leading-5
 }
 
 .link {
@@ -542,7 +543,37 @@
     grid-flow-col
     auto-cols-fr
     gap-8
+    md:grid-flow-row
+}
 
+.info-container-grey-bg {
+    @apply
+    rounded-[18px]
+    bg-custom-light-grey
+    py-4
+    px-4
+    mb-8
+    text-[18px]
+    sm:text-[14px]
+}
+
+.documento-container {
+    @apply
+    flex
+    justify-between
+    flex-row
+    custom-shadow
+    rounded-2xl
+    mb-14
+    p-11
+    min-h-[266px]
+    lg:flex-col
+    md:flex-row
+    sm:flex-col
+    sm:px-8
+    sm:min-h-[140px]
+    sm:mb-8
+    xs:p-4
 }
 
 @tailwind base;
