@@ -1892,10 +1892,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 0.5rem;
   }
 
-  .sm\:mb-4{
-    margin-bottom: 1rem;
-  }
-
   .sm\:mb-8{
     margin-bottom: 2rem;
   }
