@@ -113,13 +113,27 @@
     text-[22px]
 }
 
+.content-title-card {
+    @apply
+    block
+    font-semibold
+    text-xl
+    text-[22px]
+    text-custom-blue
+    mb-10
+    mt-4
+    sm:mt-0
+    sm:mb-4
+    sm:text-sm
+}
+
 .content-title-normal {
     @apply
     block
     font-[500]
     text-xl
-    mb-2
-    sm:text-sm
+    mb-4
+    mt-8
     sm:mb-4
     text-[18px]
 }
@@ -328,6 +342,15 @@
     text-[18px]
 }
 
+.radio-content-small {
+    @apply
+    flex
+    items-center
+    mr-4
+    mb-2
+    text-[14px]
+}
+
 .radio-input {
     @apply
     opacity-0
@@ -424,7 +447,7 @@
     px-[14px]
     h-[43px]
     sm:h-[36px]
-    rounded-3xl
+    rounded-2xl
     xs:px-4
     xs:py-[2px]
     mr-auto
@@ -526,7 +549,7 @@
     px-[14px]
     h-[43px]
     sm:h-[36px]
-    rounded-3xl
+    rounded-2xl
     xs:px-4
     xs:py-[2px]
     mr-auto

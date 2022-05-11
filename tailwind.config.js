@@ -1,6 +1,7 @@
 module.exports = {
   content: ["./**/*.html"],
   theme: {
+
     colors: {
       'custom-white': '#FFFFFF',
       'custom-green': '#00C9B7',

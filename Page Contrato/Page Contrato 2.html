@@ -34,7 +34,7 @@
     <form action="">
         <div class="content-flex-wrapper">
             <div>
-                <label for="text-1" class="content-title text-custom-blue">
+                <label for="text-1" class="content-title-card">
                     Scarica il Documento
                 </label>
                 <div class="content-container min-h-[742px] sm:min-h-[415px]">
@@ -79,36 +79,89 @@
                             </div>
                         </div>
                         <label for="text-1" class="content-title-normal">
-                            Email
+                            Indirizzo Email
                         </label>
-                        <input class="text-input mb-4 w-full" name="text-1" id="text-1" type="email">
+                        <input class="text-input mb-4 w-full" name="text-1" id="text-1" type="email"
+                               placeholder="Il tuo indirizzo email">
                         <label for="text-2" class="content-title-normal">
                             Password
                         </label>
-                        <input class="text-input mb-4 w-full password-input" name="text-2" id="text-2" type="password">
-                    </div>
-                    <div class="info-container flex-col mr-auto ml-auto">
-                        <button type="submit" class="primary-button bg-custom-green mb-12">Accedi</button>
-                        <button type="button" class="secondary-button flex items-center mb-8">
-                            <img class="mr-2" src="../img/google-icon.svg" width="16" height="16" alt="google icon">
-                            Accedi con Google
-                        </button>
-                        <div class="flex items-center flex-col">
-                            <p class="info-small text-center">Cliccando su "Registrati con Google" dichiari di aver
-                                accettato <a
-                                        class="link"
-                                        href="#">itermini e le
-                                    condizioni</a> del servizio e aver preso visione della <a class="link" href="#">privacy
-                                    policy</a>.
-                            </p>
-                            <a class="text-custom-dark-grey link" href="#">Registrati qui</a>
+                        <input class="text-input mb-4 w-full" name="text-2" id="text-2" type="password"
+                               placeholder="Inserisci una password">
+                        <label for="text-3" class="content-title-normal">
+                            Conferma Password
+                        </label>
+                        <input class="text-input mb-4 w-full" name="text-3" id="text-3" type="password"
+                               placeholder="Conferma la tua password">
+                        <div class="grid grid-cols-2 gap-x-6 xl:grid-cols-1 xl:gap-0">
+                            <div>
+                                <label for="text-4" class="content-title-normal">Nome</label>
+                                <input class="text-input mb-4 w-full" name="text-4" id="text-4" type="text"
+                                       placeholder="Il tuo nome">
+                            </div>
+                            <div>
+                                <label for="text-5" class="content-title-normal">Cognome</label>
+                                <input class="text-input mb-4 w-full" name="text-5" id="text-5" type="text"
+                                       placeholder="Il tuo cognome">
+                            </div>
+                            <div class="flex flex-col justify-between">
+                                <label for="text-6" class="content-title-normal">
+                                    Telefono
+                                </label>
+                                <div class="flex">
+                                    <div class="bg-custom-light-grey self-end text-input mb-4 text-custom-dark-grey border-r-0 rounded-tr-none rounded-br-none">+39</div>
+                                    <input class="text-input self-end mb-4 w-full rounded-tl-none rounded-bl-none" name="text-6" id="text-6" type="text"
+                                           placeholder="Il tuo telefono"></div>
+                            </div>
+                            <div>
+                                <label for="text-7" class="content-title-normal">
+                                    Hai un coupon? Inseriscilo qui!
+                                </label>
+                                <input class="text-input mb-4 w-full" name="text-7" id="text-7" type="text">
+                            </div>
                         </div>
+                        <label for="select-1" class="content-title-normal">
+                            Come ci hai conosciuti?
+                        </label>
+                        <div class="relative">
+                            <select class="w-full sm:w-full custom-select" id="select-1">
+                                <option value="option-1">option 1</option>
+                                <option value="option-2">option 2</option>
+                            </select>
+                        </div>
+                        <div id="radio-group-2" class="radio-group info-small mt-12 mb-14">
+                            <div class="radio-container">
+                                <div class="radio-content-small">
+                                    <input type="radio" id="radio-4" name="radio-2" class="radio-input cursor-pointer"/>
+                                    <div class="radio-div">
+                                        <img class="radio-img scale-x-90 scale-y-90" width="12" height="9" src="../img/check.svg"
+                                             alt="radio button">
+                                    </div>
+                                    <label for="radio-4" class="cursor-pointer sm:text-xs">Accetto i
+                                        <a class="link" href="#">termini e le condizioni</a> del servizio</label>
+                                </div>
+                            </div>
+                            <div class="radio-container">
+                                <div class="radio-content-small">
+                                    <input type="radio" id="radio-5" name="radio-2" class="radio-input cursor-pointer"/>
+                                    <div class="radio-div">
+                                        <img class="radio-img scale-x-90 scale-y-90" width="12" height="9" src="../img/check.svg"
+                                             alt="radio button">
+                                    </div>
+                                    <label for="radio-5" class="cursor-pointer sm:text-xs">Accetto la
+                                        <a class="link" href="#">privacy policy</a></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mr-auto ml-auto">
+                        <button type="submit" class="primary-button bg-custom-green mb-12">Registrati</button>
                     </div>
                 </div>
             </div>
             <div class="md:order-first">
                 <div>
-                    <label for="text-1" class="content-title text-custom-blue">
+                    <label for="text-1" class="content-title-card">
                         Anteprima del Documento
                     </label>
                     <div class="documento-container">

@@ -177,8 +177,30 @@
   }
 }
 
+.content-title-card{
+  margin-bottom: 2.5rem;
+  margin-top: 1rem;
+  display: block;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-size: 22px;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(0 83 132 / var(--tw-text-opacity));
+}
+
+@media (max-width: 639px){
+  .content-title-card{
+    margin-top: 0px;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
 .content-title-normal{
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
   display: block;
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -189,8 +211,6 @@
 @media (max-width: 639px){
   .content-title-normal{
     margin-bottom: 1rem;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 }
 
@@ -507,6 +527,14 @@
   font-size: 18px;
 }
 
+.radio-content-small{
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
 .radio-input{
   position: absolute;
   height: 2rem;
@@ -605,7 +633,7 @@
   display: flex;
   height: 43px;
   align-items: center;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(185 185 185 / var(--tw-border-opacity));
@@ -768,7 +796,7 @@
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border-radius: 1.5rem;
+  border-radius: 1rem;
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(185 185 185 / var(--tw-border-opacity));
@@ -1425,12 +1453,36 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: 0.5rem;
 }
 
+.mt-12{
+  margin-top: 3rem;
+}
+
+.mb-14{
+  margin-bottom: 3.5rem;
+}
+
+.mt-auto{
+  margin-top: auto;
+}
+
+.mb-\[2ch\]{
+  margin-bottom: 2ch;
+}
+
+.mb-0{
+  margin-bottom: 0px;
+}
+
 .block{
   display: block;
 }
 
 .flex{
   display: flex;
+}
+
+.grid{
+  display: grid;
 }
 
 .hidden{
@@ -1443,6 +1495,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[100px\]{
   height: 100px;
+}
+
+.h-full{
+  height: 100%;
 }
 
 .min-h-\[572px\]{
@@ -1529,10 +1585,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 742px;
 }
 
-.min-h-\[266px\]{
-  min-height: 266px;
-}
-
 .w-\[510px\]{
   width: 510px;
 }
@@ -1575,28 +1627,71 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-shrink: 0;
 }
 
+.grow{
+  flex-grow: 1;
+}
+
+.scale-x-90{
+  --tw-scale-x: .9;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-y-90{
+  --tw-scale-y: .9;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
 
-.flex-row{
-  flex-direction: row;
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col{
   flex-direction: column;
 }
 
+.content-end{
+  align-content: flex-end;
+}
+
+.content-between{
+  align-content: space-between;
+}
+
 .items-center{
   align-items: center;
+}
+
+.justify-end{
+  justify-content: flex-end;
 }
 
 .justify-between{
   justify-content: space-between;
 }
 
+.justify-items-end{
+  justify-items: end;
+}
+
+.gap-x-6{
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+
+.self-end{
+  align-self: flex-end;
+}
+
 .self-center{
   align-self: center;
+}
+
+.self-stretch{
+  align-self: stretch;
 }
 
 .rounded-\[18px\]{
@@ -1607,8 +1702,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 1rem;
 }
 
+.rounded-tr-none{
+  border-top-right-radius: 0px;
+}
+
+.rounded-br-none{
+  border-bottom-right-radius: 0px;
+}
+
+.rounded-tl-none{
+  border-top-left-radius: 0px;
+}
+
+.rounded-bl-none{
+  border-bottom-left-radius: 0px;
+}
+
 .border-\[1px\]{
   border-width: 1px;
+}
+
+.border-r-0{
+  border-right-width: 0px;
 }
 
 .border-custom-grey{
@@ -1645,9 +1760,44 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1rem;
 }
 
-.py-4{
-  padding-top: 1rem;
+.pb-4{
   padding-bottom: 1rem;
+}
+
+.pb-\[1ch\]{
+  padding-bottom: 1ch;
+}
+
+.pb-\[2ch\]{
+  padding-bottom: 2ch;
+}
+
+.pb-\[3ch\]{
+  padding-bottom: 3ch;
+}
+
+.pb-2{
+  padding-bottom: 0.5rem;
+}
+
+.pb-6{
+  padding-bottom: 1.5rem;
+}
+
+.pb-\[1rem\]{
+  padding-bottom: 1rem;
+}
+
+.pb-\[1\.2rem\]{
+  padding-bottom: 1.2rem;
+}
+
+.pb-8{
+  padding-bottom: 2rem;
+}
+
+.pb-7{
+  padding-bottom: 1.75rem;
 }
 
 .text-center{
@@ -1680,14 +1830,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(185 185 185 / var(--tw-text-opacity));
 }
 
-.text-custom-blue{
-  --tw-text-opacity: 1;
-  color: rgb(0 83 132 / var(--tw-text-opacity));
-}
+@media (max-width: 1279px){
+  .xl\:grid-cols-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 
-@media (max-width: 1023px){
-  .lg\:flex-col{
-    flex-direction: column;
+  .xl\:gap-0{
+    gap: 0px;
   }
 }
 
@@ -1698,10 +1847,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:w-\[300px\]{
     width: 300px;
-  }
-
-  .md\:flex-row{
-    flex-direction: row;
   }
 }
 
@@ -1806,16 +1951,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     min-height: 472px;
   }
 
-  .sm\:min-h-\[140px\]{
-    min-height: 140px;
-  }
-
   .sm\:w-full{
     width: 100%;
-  }
-
-  .sm\:flex-col{
-    flex-direction: column;
   }
 
   .sm\:p-4{
@@ -1825,11 +1962,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:px-2{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-  }
-
-  .sm\:px-8{
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 
   .sm\:text-xs{
