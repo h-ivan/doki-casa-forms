@@ -136,6 +136,7 @@
     mt-8
     sm:mb-4
     text-[18px]
+    text-custom-dark-blue
 }
 
 .primary-button {
@@ -597,6 +598,27 @@
     sm:min-h-[140px]
     sm:mb-8
     xs:p-4
+}
+
+.small-card-container {
+    @apply
+    custom-shadow
+    rounded-2xl
+    mb-14
+    sm:mb-8
+    flex
+    justify-between
+    flex-col
+    p-11
+    xs:p-4
+    text-center
+    cursor-pointer
+    hover:outline
+    hover:outline-1
+    hover:outline-custom-dark-blue
+    sm:flex-row-reverse
+    sm:justify-center
+    items-center
 }
 
 @tailwind base;
