@@ -631,6 +631,29 @@
     items-center
 }
 
+.pricing-card {
+    @apply
+    shadow-md
+    rounded-2xl
+    mb-14
+    sm:mb-8
+    flex
+    justify-between
+    flex-col
+    p-11
+    xs:p-4
+    min-h-[527px]
+    sm:min-h-[255px]
+    mx-auto
+    px-20
+    md:px-8
+    sm:px-4
+    xs:max-w-[100%]
+    border
+    border-custom-grey
+
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
