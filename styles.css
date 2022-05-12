@@ -62,6 +62,17 @@
   }
 }
 
+.doki-logo{
+  margin-top: -8px;
+}
+
+@media (max-width: 639px){
+  .doki-logo{
+    height: 57px;
+    width: 113px;
+  }
+}
+
 @media (max-width: 424px){
   .doki-logo{
     height: 37px;
@@ -212,7 +223,8 @@
 
 @media (max-width: 639px){
   .content-title-normal{
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
   }
 }
 
@@ -237,6 +249,12 @@
 @media (max-width: 767px){
   .primary-button{
     font-size: 16px;
+  }
+}
+
+@media (max-width: 639px){
+  .primary-button{
+    font-size: 14px;
   }
 }
 
@@ -274,12 +292,18 @@
   }
 }
 
+@media (max-width: 639px){
+  .secondary-button{
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 424px){
   .secondary-button{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
     padding-top: 5px;
     padding-bottom: 5px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 }
 
@@ -301,6 +325,12 @@
 .blue-button:hover{
   --tw-brightness: brightness(1.05);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@media (max-width: 639px){
+  .blue-button{
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 424px){
@@ -651,15 +681,16 @@
   .text-input{
     margin-bottom: 1.5rem;
     height: 36px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 424px){
   .text-input{
-    padding-left: 1rem;
-    padding-right: 1rem;
     padding-top: 2px;
     padding-bottom: 2px;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -679,6 +710,18 @@
   font-size: 18px;
   --tw-text-opacity: 1;
   color: rgb(238 238 238 / var(--tw-text-opacity));
+}
+
+@media (max-width: 639px){
+  .text-input::-moz-placeholder{
+    font-size: 14px;
+  }
+  .text-input:-ms-input-placeholder{
+    font-size: 14px;
+  }
+  .text-input::placeholder{
+    font-size: 14px;
+  }
 }
 
 .separator{
@@ -1822,6 +1865,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 600;
 }
 
+.leading-5{
+  line-height: 1.25rem;
+}
+
 .text-custom-dark-grey{
   --tw-text-opacity: 1;
   color: rgb(135 135 135 / var(--tw-text-opacity));
@@ -1888,16 +1935,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 0px;
   }
 
-  .sm\:mr-2{
-    margin-right: 0.5rem;
-  }
-
   .sm\:mb-8{
     margin-bottom: 2rem;
   }
 
-  .sm\:h-\[120px\]{
-    height: 120px;
+  .sm\:mr-2{
+    margin-right: 0.5rem;
   }
 
   .sm\:h-\[86px\]{

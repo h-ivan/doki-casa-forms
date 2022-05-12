@@ -19,6 +19,7 @@
     @apply
     text-custom-blue
 }
+
 .link:hover {
     @apply
     brightness-125
@@ -47,6 +48,9 @@
 
 .doki-logo {
     @apply
+    mt-[-8px]
+    sm:w-[113px]
+    sm:h-[57px]
     xs:w-[93px]
     xs:h-[37px]
 }
@@ -134,8 +138,9 @@
     text-xl
     mb-4
     mt-8
-    sm:mb-4
+    sm:mb-2
     text-[18px]
+    sm:text-[14px]
     text-custom-dark-blue
 }
 
@@ -143,6 +148,7 @@
     @apply
     text-[18px]
     md:text-[16px]
+    sm:text-[14px]
     py-[10px]
     px-12
     custom-shadow
@@ -157,17 +163,18 @@
 .secondary-button {
     @apply
     text-[18px]
-    md:text-[16px]
     py-[10px]
     px-12
     custom-shadow
     cursor-pointer
     rounded-2xl
     hover:brightness-75
-    xs:px-6
-    xs:py-[5px]
     border-[1px]
     border-custom-grey
+    md:text-[16px]
+    sm:text-[14px]
+    xs:py-[5px]
+    xs:px-6
 }
 
 .blue-button {
@@ -184,6 +191,7 @@
     flex
     items-center
     mb-4
+    sm:text-[14px]
 }
 
 .grey-box {
@@ -447,10 +455,7 @@
     py-[4px]
     px-[14px]
     h-[43px]
-    sm:h-[36px]
     rounded-2xl
-    xs:px-4
-    xs:py-[2px]
     mr-auto
     border-[1px]
     border-custom-grey
@@ -458,13 +463,18 @@
     items-center
     outline-custom-dark-grey
     mb-8
+    sm:h-[36px]
     sm:mb-6
+    sm:text-[14px]
+    xs:py-[2px]
+    xs:px-4
 }
 
 .text-input::placeholder {
     @apply
     text-custom-light-grey
     text-[18px]
+    sm:text-[14px]
 }
 
 .separator {
