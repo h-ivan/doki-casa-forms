@@ -60,7 +60,7 @@
                             </label>
                         </div>
                     </div>
-                    <div class="pricing-card ml-0 md:mx-auto relative border-custom-dark-green">
+                    <div class="pricing-card ml-0 md:mx-auto border-custom-dark-green">
                         <img class="absolute right-[-15px] top-[-15px]" src="../img/check-circle.svg" alt="check"
                              width="39"
                              height="39">
@@ -102,7 +102,87 @@
                 </div>
             </div>
         </div>
-
+        <!--SECTION 2-->
+        <div class="content-flex-wrapper">
+            <div>
+                <h3 class="content-title-card font-medium mb-4">
+                    Seleziona metodo di pagamento
+                </h3>
+                <p class="info-small text-[18px] mb-10 leading-7">Puoi pagare con carta di Crediti/Debito, PayPal o con
+                    Bonifico
+                    Bancario</p>
+                <div class="flex gap-x-12 lg:gap-x-8 md:flex-col">
+                    <div class="pricing-card max-w-[200px] mr-0 md:mx-auto min-h-[300px]">
+                        <div class="bg-custom-light-grey rounded-t-[16px] flex flex-col justify-center items-center h-[141px] sm:h-[85px] bg-opacity-30">
+                            <div class="flex gap-x-6 sm:-mt-4">
+                                <img class="pricing-card-logo" src="../img/logo-visa.svg" width="47" height="43"
+                                     alt="logo visa">
+                                <img class="pricing-card-logo" src="../img/logo-master.svg" width="48" height="48"
+                                     alt="logo visa">
+                                <img class="pricing-card-logo" src="../img/logo-paypal.svg" width="37" height="37"
+                                     alt="logo paypal">
+                            </div>
+                            <p class="text-custom-dark-blue text-[24px] font-medium lg:text-[20px] md:text-[16px] sm:-mt-4">
+                                Carta di
+                                Credit/Debito o PayPal</p>
+                        </div>
+                        <div class="self-center mt-auto">
+                            <label for="radio-4" class="primary-button bg-custom-green bg-opacity-90 flex items-center">
+                                <input class="scale-125 sm:scale-100 mr-2" id="radio-4" name="radio-2" type="radio">
+                                <p>Seleziona</p>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="pricing-card min-h-[300px] max-w-[200px] ml-0 md:mx-auto">
+                        <div class="bg-custom-light-grey rounded-t-[16px] flex flex-col justify-center items-center h-[141px] sm:h-[85px] bg-opacity-30 mb-4">
+                            <img class="pricing-card-logo sm:mt-0" src="../img/logo-bank.svg" width="37" height="37"
+                                 alt="logo bank">
+                            <p class="text-custom-dark-grey text-[24px] font-medium lg:text-[20px] md:text-[16px] sm:-mt-4 lg:text-[20px]">
+                                Bonifico Bancario</p>
+                        </div>
+                        <div class="mx-auto text-center text-custom-dark-grey self-stretch mb-6">
+                            <p class="card-item-text px-8">Il pagamento con bonifico verrà richiesto al termine del
+                                Servizio</p>
+                        </div>
+                        <div class="self-center mt-auto">
+                            <label for="radio-3" class="primary-button bg-custom-grey bg-opacity-90 flex items-center">
+                                <input class="scale-125 sm:scale-100 mr-2" id="radio-3" name="radio-2" type="radio">Seleziona
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--SECTION 3-->
+        <div class="mb-8">
+            <div>
+                <h3 class="content-title-card font-medium mb-4">
+                    Dati di faturazione
+                </h3>
+                <p class="info-small text-[18px] mb-10">Indicaci dati per emettere la Fattura</p>
+            </div>
+            <div>
+                <div id="radio-group" class="radio-container">
+                    <div class="radio-content">
+                        <input type="radio" id="radio-5" name="radio-1" class="radio-input cursor-pointer"/>
+                        <div class="radio-div">
+                            <img class="radio-img" width="12" height="9" src="../img/check.svg" alt="radio button">
+                        </div>
+                        <label for="radio-5" class="cursor-pointer sm:text-xs">Voglio intestare la fattura a me </label>
+                    </div>
+                </div>
+                <div class="radio-container">
+                    <div class="radio-content">
+                        <input type="radio" id="radio-6" name="radio-1" class="radio-input cursor-pointer"/>
+                        <div class="radio-div">
+                            <img class="radio-img" width="12" height="9" src="../img/check.svg" alt="radio button">
+                        </div>
+                        <label for="radio-6" class="cursor-pointer sm:text-xs">Voglio intestare la fattura ad un’altra
+                            persona</label>
+                    </div>
+                </div>
+            </div>
+        </div>
     </form>
     <div class="chat-button-container">
         <button class="chat-button"></button>

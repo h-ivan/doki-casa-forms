@@ -636,22 +636,45 @@
     shadow-md
     rounded-2xl
     mb-14
-    sm:mb-8
     flex
-    justify-between
     flex-col
-    p-11
-    xs:p-4
-    min-h-[527px]
-    sm:min-h-[255px]
     mx-auto
-    px-20
-    md:px-8
-    sm:px-4
-    xs:max-w-[100%]
     border
     border-custom-grey
+    pb-10
+    sm:pb-6
+    min-h-[527px]
+    min-w-[370px]
+    lg:min-w-[350px]
+    sm:min-h-[255px]
+    sm:mb-8
+    xs:min-w-[290px]
+    xs:max-w-[100%]
+}
 
+.pricing-card-logo {
+    @apply
+    mb-4
+    sm:scale-75
+    sm:mt-4
+}
+
+.card-item-text-lg {
+    @apply
+    text-[26px]
+    sm:text-[14px]
+    sm:mb-4
+    mb-8
+    mt-8
+}
+
+.card-item-text {
+    @apply
+    text-[18px]
+    sm:text-[14px]
+    mb-6
+    sm:mb-3
+    leading-5
 }
 
 @tailwind base;
