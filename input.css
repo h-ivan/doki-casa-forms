@@ -500,6 +500,16 @@
     text-[17px]
 }
 
+.text-info-md {
+    @apply
+    text-[18px]
+    sm:text-xs
+    text-custom-dark-grey
+    max-w-[600px]
+    font-medium
+    mb-6
+}
+
 .info-container {
     @apply
     flex
@@ -675,6 +685,79 @@
     mb-6
     sm:mb-3
     leading-5
+}
+
+.heading-circle-container {
+    @apply
+    w-[390px]
+    lg:w-[300px]
+    relative
+    flex
+    justify-between
+    items-center
+}
+
+.heading-circle-h-line {
+    @apply
+    absolute
+    bg-custom-blue
+    h-[1px]
+    w-full
+    top-1/2
+    -z-10
+}
+
+.heading-circle-v-line {
+    @apply
+    absolute
+    bg-custom-blue
+    w-[1px]
+    h-[60px]
+    left-0
+    right-0
+    top-1/2
+    -z-10
+    mx-auto
+}
+
+.heading-circle-v-dot {
+    @apply
+    absolute
+    bg-custom-blue
+    w-[5px]
+    h-[5px]
+    left-0
+    right-0
+    mt-[89px]
+    rotate-45
+    -z-10
+    mx-auto
+}
+
+.heading-circle-blue {
+    @apply
+    rounded-full
+    bg-custom-blue
+    text-custom-light-grey
+    text-[32px]
+    w-[66px]
+    h-[66px]
+    text-center
+    leading-[62px]
+}
+
+.heading-circle-white {
+    @apply
+    rounded-full
+    border-custom-blue
+    bg-custom-white
+    border
+    text-custom-blue
+    text-[32px]
+    w-[66px]
+    h-[66px]
+    text-center
+    leading-[62px]
 }
 
 @tailwind base;
