@@ -106,6 +106,19 @@
     xs:p-4
 }
 
+.content-container-contratti {
+    @apply
+    border
+    rounded-2xl
+    mb-14
+    sm:mb-8
+    flex
+    justify-between
+    p-11
+    xs:p-4
+    w-full
+}
+
 .content-title {
     @apply
     block
@@ -567,7 +580,8 @@
     bg-right
     appearance-none
     py-[4px]
-    px-[14px]
+    pl-[20px]
+    pr-[8px]
     h-[43px]
     sm:h-[36px]
     rounded-2xl
@@ -579,6 +593,8 @@
     outline-custom-dark-grey
     mb-8
     sm:mb-6
+    bg-origin-content
+    min-w-[200px]
 }
 
 .content-flex-wrapper {
