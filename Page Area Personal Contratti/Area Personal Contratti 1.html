@@ -32,24 +32,70 @@
                 <h2 class="content-title-card text-[26px] sm:text-base">
                     Ciao Nicolo!
                 </h2>
-                <p class="info-small text-custom-dark-green">
+                <p class="info-small text-custom-dark-green sm:hidden">
                     Hai bisogno di supporto? Scrivi a <a class="font-medium" href="mailto:servizi@dokicasa.it">servizi@dokicasa.it</a>
                     oppure contattaci
                 </p>
-                <div class="flex gap-x-12 lg:gap-x-8 md:flex-col">
-                    <div class="content-container-contratti">
-                        <button class="primary-button bg-custom-dark-green py-8">CREA NUOVO DOCUMENTO</button>
-                        <input class="drop-shadow-lg text-input bg-[url('../img/search-icon.svg')] bg-no-repeat bg-right bg-origin-content h-[54px]">
-                        <select class="border-none bg-custom-light-grey sm:w-full custom-select" id="select-1">
-                            <option disabled selected>Filtra i documenti</option>
-                            <option value="option-1">option 1</option>
-                            <option value="option-2">option 2</option>
-                        </select>
+                <div class="content-container-contratti">
+                    <div class="flex grow gap-x-6 sm:gap-x-2">
+                        <button class="documento-button bg-custom-dark-green">
+                            CREA
+                            NUOVO
+                            DOCUMENTO
+                        </button>
+                        <input class="search-input">
                     </div>
+                    <select class="border-none shadow-md h-[58px] sm:h-[46px] bg-custom-light-grey md:w-full custom-select"
+                            id="select-1">
+                        <option disabled selected>Filtra i documenti</option>
+                        <option value="option-1">option 1</option>
+                        <option value="option-2">option 2</option>
+                    </select>
                 </div>
             </div>
-        </div>
 
+        </div>
+        <aside class="w-64" aria-label="Sidebar">
+            <div class="overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
+                <ul class="space-y-2">
+                    <li>
+                        <a href="#" class="sidebar-item">
+                            <span class="ml-3">Profilo</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-item">
+                            <span class="ml-3">Contratti</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-item">
+                            <span class="ml-3">Firme Digitali</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-item">
+                            <span class="ml-3">Pratiche</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-item">
+                            <span class="ml-3">Canone Concordato</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-item">
+                            <span class="ml-3">Crediti</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="sidebar-item">
+                            <span class="ml-3">Profilo</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
     </form>
     <div class="chat-button-container">
         <button class="chat-button"></button>

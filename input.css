@@ -108,15 +108,14 @@
 
 .content-container-contratti {
     @apply
-    border
-    rounded-2xl
     mb-14
     sm:mb-8
     flex
     justify-between
-    p-11
-    xs:p-4
     w-full
+    md:flex-col
+    gap-x-6
+    gap-y-6
 }
 
 .content-title {
@@ -205,6 +204,28 @@
     items-center
     mb-4
     sm:text-[14px]
+}
+
+.documento-button {
+    @apply
+    text-[18px]
+    py-[10px]
+    px-12
+    shadow-md
+    cursor-pointer
+    text-custom-white
+    rounded-2xl
+    hover:brightness-105
+    md:order-last
+    shrink-0
+    md:h-[54px]
+    md:text-[16px]
+    sm:shrink
+    sm:h-[48px]
+    sm:py-0
+    sm:px-6
+    sm:text-[14px]
+    xs:py-[5px]
 }
 
 .grey-box {
@@ -573,7 +594,6 @@
 }
 
 .custom-select {
-    background-position-x: 97% !important;
     @apply
     bg-[url('../img/select-arrow.svg')]
     bg-no-repeat
@@ -774,6 +794,29 @@
     h-[66px]
     text-center
     leading-[62px]
+}
+
+.search-input {
+    @apply
+    drop-shadow-md
+    rounded-2xl
+    w-full
+    px-6
+    bg-[url('../img/search-icon.svg')]
+    bg-no-repeat
+    bg-right
+    bg-origin-content
+    h-[54px]
+    min-w-[100px]
+    sm:h-[48px]
+}
+
+.sidebar-item {
+    @apply
+    flex
+    p-2
+    text-base
+    font-normal
 }
 
 @tailwind base;
