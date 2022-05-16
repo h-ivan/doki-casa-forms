@@ -109,14 +109,13 @@
 .content-container-contratti {
     @apply
     mb-14
-    sm:mb-8
     flex
     justify-between
     w-full
     md:flex-col
-    md:mb-0
     gap-y-6
     gap-x-6
+    lg:mb-0
 }
 
 .content-title {
@@ -219,7 +218,10 @@
     hover:brightness-105
     md:order-last
     shrink-0
-    md:h-[54px]
+    lg:px-2
+    lg:py-2
+    lg:text-[16px]
+    lg:h-[58px]
     md:text-[16px]
     sm:shrink
     sm:h-[48px]
@@ -618,6 +620,16 @@
     min-w-[200px]
 }
 
+.rotate-arrow {
+    @apply
+    rotate-180
+    transition-all
+}
+
+#selected {
+    @apply bg-custom-light-grey
+}
+
 .content-flex-wrapper {
     @apply
     grid
@@ -826,8 +838,25 @@
     @apply
     border-b
     border-custom-grey
-    hover:bg-custom-light-grey
+}
 
+.sidebar-menu {
+    @apply
+    overflow-y-auto
+    rounded-[18px]
+    custom-shadow
+    min-w-[325px]
+    sm:min-w-fit
+    grow
+    lg:max-h-[60px]
+    lg:overflow-hidden
+    leading-5
+}
+
+.sidebar-menu-open {
+    @apply
+    max-h-full
+    overflow-visible
 }
 
 .contratti-card {
@@ -856,12 +885,6 @@
     justify-between
 }
 
-#check-sidebar:checked + #sidebar-menu {
-    @apply
-    max-h-[60px]
-    overflow-hidden
-
-}
 
 @tailwind base;
 @tailwind components;

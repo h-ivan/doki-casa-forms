@@ -55,47 +55,50 @@
 
     </div>
     <aside class="flex gap-x-8 mb-12 lg:flex-col lg:gap-y-8">
-<!--        <a href="#Contratti">link</a>-->
-<!--        <label for="check-sidebar">menu</label>-->
-<!--        <input type="checkbox" id="check-sidebar">-->
-        <div id="sidebar-menu" class="overflow-y-auto rounded-[18px] custom-shadow min-w-[325px] sm:min-w-full">
-            <ul>
-                <li class="sidebar-item-container pt-1">
-                    <a href="#" class="sidebar-item">
-                        <span class="ml-3">Profilo</span>
-                    </a>
-                </li>
-                <li id="Contratti" class="sidebar-item-container">
-                    <a href="#" class="sidebar-item">
-                        <span class="ml-3">Contratti</span>
-                    </a>
-                </li>
-                <li class="sidebar-item-container">
-                    <a href="#" class="sidebar-item">
-                        <span class="ml-3">Firme Digitali</span>
-                    </a>
-                </li>
-                <li class="sidebar-item-container">
-                    <a href="#" class="sidebar-item">
-                        <span class="ml-3">Pratiche</span>
-                    </a>
-                </li>
-                <li class="sidebar-item-container">
-                    <a href="#" class="sidebar-item">
-                        <span class="ml-3">Canone Concordato</span>
-                    </a>
-                </li>
-                <li class="sidebar-item-container">
-                    <a href="#" class="sidebar-item">
-                        <span class="ml-3">Crediti</span>
-                    </a>
-                </li>
-                <li class="pb-1 hover:bg-custom-light-grey">
-                    <a href="#" class="sidebar-item">
-                        <span class="ml-3">Pagamenti</span>
-                    </a>
-                </li>
-            </ul>
+        <div id="sidebar-flex-container" class="flex gap-x-1">
+            <div id="sidebar-menu" class="sidebar-menu">
+                <ul>
+                    <li class="sidebar-item-container pt-1">
+                        <a href="#" class="sidebar-item">
+                            <span class="ml-3">Profilo</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item-container">
+                        <a href="#" class="sidebar-item">
+                            <span class="ml-3">Contratti</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item-container">
+                        <a href="#" class="sidebar-item">
+                            <span class="ml-3">Firme Digitali</span>
+                        </a>
+                    </li>
+                    <li id="selected" class="sidebar-item-container">
+                        <a href="#" class="sidebar-item">
+                            <span class="ml-3">Pratiche</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item-container">
+                        <a href="#" class="sidebar-item">
+                            <span class="ml-3">Canone Concordato</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item-container">
+                        <a href="#" class="sidebar-item">
+                            <span class="ml-3">Crediti</span>
+                        </a>
+                    </li>
+                    <li class="pb-1 hover:bg-custom-light-grey">
+                        <a href="#" class="sidebar-item">
+                            <span class="ml-3">Pagamenti</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="sidebar-toggle" class="hidden lg:block h-[60px] w-[40px] cursor-pointer mx-auto">
+                <img id="arrow" class="mx-auto h-full align-middle" src="../img/select-arrow.svg" width="20" height="12"
+                     alt="menu-toggle">
+            </div>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-1 grow gap-4">
             <div class="contratti-card">
@@ -174,7 +177,6 @@
                 </div>
             </div>
 
-
         </div>
     </aside>
     <div class="chat-button-container">
@@ -194,5 +196,36 @@
     </div>
 </footer>
 <!--/FOOTER-->
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const position = document.getElementById("selected");
+        const arrow = document.getElementById("arrow");
+        const toggler = document.getElementById("sidebar-toggle");
+        const mediaQuery = window.matchMedia('(max-width: 1020px)');
+        const menu = document.getElementsByClassName('sidebar-menu')[0];
+        const container = document.getElementById('sidebar-flex-container');
+
+        position.scrollIntoView();
+
+        mediaQuery.addEventListener('change', function (e) {
+            position.scrollIntoView();
+        });
+
+        toggler.addEventListener('click', function () {
+            this.x = ((this.x || 0) + 1) % 2;
+            if (this.x) {
+                menu.classList.add('sidebar-menu-open');
+                arrow.classList.add('rotate-arrow');
+                container.classList.add('flex-col');
+
+            } else {
+                menu.classList.remove('sidebar-menu-open');
+                arrow.classList.remove('rotate-arrow');
+                container.classList.remove('flex-col');
+            }
+        });
+
+    });
+</script>
 </body>
 </html>
