@@ -114,8 +114,9 @@
     justify-between
     w-full
     md:flex-col
-    gap-x-6
+    md:mb-0
     gap-y-6
+    gap-x-6
 }
 
 .content-title {
@@ -601,7 +602,7 @@
     appearance-none
     py-[4px]
     pl-[20px]
-    pr-[8px]
+    pr-[14px]
     h-[43px]
     sm:h-[36px]
     rounded-2xl
@@ -814,9 +815,52 @@
 .sidebar-item {
     @apply
     flex
-    p-2
-    text-base
-    font-normal
+    p-5
+    text-[18px]
+    font-medium
+    text-custom-blue
+    cursor-pointer
+}
+
+.sidebar-item-container {
+    @apply
+    border-b
+    border-custom-grey
+    hover:bg-custom-light-grey
+
+}
+
+.contratti-card {
+    @apply
+    rounded-[18px]
+    custom-shadow
+    overflow-hidden
+    flex
+    flex-col
+    relative
+    min-h-[220px]
+}
+
+.contratti-card-header {
+    @apply
+    bg-custom-light-grey
+    h-[60px]
+    text-custom-blue
+    font-medium
+    leading-5
+    text-[20px]
+    py-5
+    px-8
+    sm:px-4
+    flex
+    justify-between
+}
+
+#check-sidebar:checked + #sidebar-menu {
+    @apply
+    max-h-[60px]
+    overflow-hidden
+
 }
 
 @tailwind base;

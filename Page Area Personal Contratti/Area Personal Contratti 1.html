@@ -26,77 +26,157 @@
 <!--/HEADER-->
 <!--CONTENT-->
 <div class="content-section">
-    <form action="">
-        <div class="content-flex-wrapper">
-            <div>
-                <h2 class="content-title-card text-[26px] sm:text-base">
-                    Ciao Nicolo!
-                </h2>
-                <p class="info-small text-custom-dark-green sm:hidden">
-                    Hai bisogno di supporto? Scrivi a <a class="font-medium" href="mailto:servizi@dokicasa.it">servizi@dokicasa.it</a>
-                    oppure contattaci
-                </p>
-                <div class="content-container-contratti">
-                    <div class="flex grow gap-x-6 sm:gap-x-2">
-                        <button class="documento-button bg-custom-dark-green">
-                            CREA
-                            NUOVO
-                            DOCUMENTO
-                        </button>
-                        <input class="search-input">
+    <div class="content-flex-wrapper">
+        <div>
+            <h2 class="content-title-card text-[26px] sm:text-base">
+                Ciao Nicolo!
+            </h2>
+            <p class="info-small text-custom-dark-green sm:hidden">
+                Hai bisogno di supporto? Scrivi a <a class="font-medium" href="mailto:servizi@dokicasa.it">servizi@dokicasa.it</a>
+                oppure contattaci
+            </p>
+            <div class="content-container-contratti">
+                <div class="flex grow gap-x-6 sm:gap-x-2">
+                    <button class="documento-button bg-custom-dark-green">
+                        CREA
+                        NUOVO
+                        DOCUMENTO
+                    </button>
+                    <input class="search-input">
+                </div>
+                <select class="border-none shadow-md h-[58px] sm:h-[46px] bg-custom-light-grey md:w-full custom-select"
+                        id="select-1">
+                    <option disabled selected>Filtra i documenti</option>
+                    <option value="option-1">option 1</option>
+                    <option value="option-2">option 2</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+    <aside class="flex gap-x-8 mb-12 lg:flex-col lg:gap-y-8">
+<!--        <a href="#Contratti">link</a>-->
+<!--        <label for="check-sidebar">menu</label>-->
+<!--        <input type="checkbox" id="check-sidebar">-->
+        <div id="sidebar-menu" class="overflow-y-auto rounded-[18px] custom-shadow min-w-[325px] sm:min-w-full">
+            <ul>
+                <li class="sidebar-item-container pt-1">
+                    <a href="#" class="sidebar-item">
+                        <span class="ml-3">Profilo</span>
+                    </a>
+                </li>
+                <li id="Contratti" class="sidebar-item-container">
+                    <a href="#" class="sidebar-item">
+                        <span class="ml-3">Contratti</span>
+                    </a>
+                </li>
+                <li class="sidebar-item-container">
+                    <a href="#" class="sidebar-item">
+                        <span class="ml-3">Firme Digitali</span>
+                    </a>
+                </li>
+                <li class="sidebar-item-container">
+                    <a href="#" class="sidebar-item">
+                        <span class="ml-3">Pratiche</span>
+                    </a>
+                </li>
+                <li class="sidebar-item-container">
+                    <a href="#" class="sidebar-item">
+                        <span class="ml-3">Canone Concordato</span>
+                    </a>
+                </li>
+                <li class="sidebar-item-container">
+                    <a href="#" class="sidebar-item">
+                        <span class="ml-3">Crediti</span>
+                    </a>
+                </li>
+                <li class="pb-1 hover:bg-custom-light-grey">
+                    <a href="#" class="sidebar-item">
+                        <span class="ml-3">Pagamenti</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-1 grow gap-4">
+            <div class="contratti-card">
+                <div class="contratti-card-header">
+                    <label class="grow">Test 1</label>
+                    <div class="flex gap-x-4">
+                        <img src="../img/icon-pencil.svg" width="21" height="21" alt="icon-pencil">
+                        <img src="../img/icon-trash.svg" width="21" height="21" alt="icon-trash">
                     </div>
-                    <select class="border-none shadow-md h-[58px] sm:h-[46px] bg-custom-light-grey md:w-full custom-select"
-                            id="select-1">
-                        <option disabled selected>Filtra i documenti</option>
-                        <option value="option-1">option 1</option>
-                        <option value="option-2">option 2</option>
-                    </select>
+                </div>
+                <div class="px-8 sm:px-4 py-4">
+                    <p class="text-custom-blue text-[14px] mb-1">Locazione ad Uso Abitativo 4+4</p>
+                    <p class="text-custom-grey text-[14px]">#5929 Creato il: 22/01/2022</p>
+                </div>
+                <div class="flex justify-between px-8 sm:px-4 justify-between absolute bottom-0 mb-4 w-full">
+                    <button class="secondary-button text-[14px] text-custom-grey py-1 px-4 xs:px-3">Modifica Contratto
+                    </button>
+                    <button class="primary-button text-[14px] bg-custom-blue py-1 px-4 xs:px-3">Acquista ora</button>
                 </div>
             </div>
 
-        </div>
-        <aside class="w-64" aria-label="Sidebar">
-            <div class="overflow-y-auto py-4 px-3 bg-gray-50 rounded dark:bg-gray-800">
-                <ul class="space-y-2">
-                    <li>
-                        <a href="#" class="sidebar-item">
-                            <span class="ml-3">Profilo</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="sidebar-item">
-                            <span class="ml-3">Contratti</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="sidebar-item">
-                            <span class="ml-3">Firme Digitali</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="sidebar-item">
-                            <span class="ml-3">Pratiche</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="sidebar-item">
-                            <span class="ml-3">Canone Concordato</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="sidebar-item">
-                            <span class="ml-3">Crediti</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="sidebar-item">
-                            <span class="ml-3">Profilo</span>
-                        </a>
-                    </li>
-                </ul>
+            <div class="contratti-card">
+                <div class="contratti-card-header">
+                    <label class="grow">Test 1</label>
+                    <div class="flex gap-x-4">
+                        <img src="../img/icon-pencil.svg" width="21" height="21" alt="icon-pencil">
+                        <img src="../img/icon-trash.svg" width="21" height="21" alt="icon-trash">
+                    </div>
+                </div>
+                <div class="px-8 sm:px-4 py-4">
+                    <p class="text-custom-blue text-[14px] mb-1">Locazione ad Uso Abitativo 4+4</p>
+                    <p class="text-custom-grey text-[14px]">#5929 Creato il: 22/01/2022</p>
+                </div>
+                <div class="flex justify-between px-8 sm:px-4 justify-between absolute bottom-0 mb-4 w-full">
+                    <button class="secondary-button text-[14px] text-custom-grey py-1 px-4 xs:px-3">Modifica Contratto
+                    </button>
+                    <button class="primary-button text-[14px] bg-custom-blue py-1 px-4 xs:px-3">Acquista ora</button>
+                </div>
             </div>
-        </aside>
-    </form>
+
+            <div class="contratti-card">
+                <div class="contratti-card-header">
+                    <label class="grow">Test 1</label>
+                    <div class="flex gap-x-4">
+                        <img src="../img/icon-pencil.svg" width="21" height="21" alt="icon-pencil">
+                        <img src="../img/icon-trash.svg" width="21" height="21" alt="icon-trash">
+                    </div>
+                </div>
+                <div class="px-8 sm:px-4 py-4">
+                    <p class="text-custom-blue text-[14px] mb-1">Locazione ad Uso Abitativo 4+4</p>
+                    <p class="text-custom-grey text-[14px]">#5929 Creato il: 22/01/2022</p>
+                </div>
+                <div class="flex justify-between px-8 sm:px-4 justify-between absolute bottom-0 mb-4 w-full">
+                    <button class="secondary-button text-[14px] text-custom-grey py-1 px-4 sm:px-3">Modifica Contratto
+                    </button>
+                    <button class="primary-button text-[14px] bg-custom-blue py-1 px-4 sm:px-3">Acquista ora</button>
+                </div>
+            </div>
+
+            <div class="contratti-card">
+                <div class="contratti-card-header">
+                    <label class="grow">Test 1</label>
+                    <div class="flex gap-x-4">
+                        <img src="../img/icon-pencil.svg" width="21" height="21" alt="icon-pencil">
+                        <img src="../img/icon-trash.svg" width="21" height="21" alt="icon-trash">
+                    </div>
+                </div>
+                <div class="px-8 sm:px-4 py-4">
+                    <p class="text-custom-blue text-[14px] mb-1">Locazione ad Uso Abitativo 4+4</p>
+                    <p class="text-custom-grey text-[14px]">#5929 Creato il: 22/01/2022</p>
+                </div>
+                <div class="flex justify-between px-8 sm:px-4 justify-between absolute bottom-0 mb-4 w-full">
+                    <button class="secondary-button text-[14px] text-custom-grey py-1 px-4 xs:px-3">Modifica Contratto
+                    </button>
+                    <button class="primary-button text-[14px] bg-custom-blue py-1 px-4 xs:px-3">Acquista ora</button>
+                </div>
+            </div>
+
+
+        </div>
+    </aside>
     <div class="chat-button-container">
         <button class="chat-button"></button>
     </div>
