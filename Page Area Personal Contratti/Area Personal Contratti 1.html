@@ -54,8 +54,8 @@
         </div>
 
     </div>
-    <aside class="flex gap-x-8 mb-12 lg:flex-col lg:gap-y-8">
-        <div id="sidebar-flex-container" class="flex gap-x-1">
+    <div class="flex gap-x-8 mb-12 lg:flex-col lg:gap-y-8 items-start lg:items-stretch">
+        <div id="sidebar-flex-container" class="flex flex-col gap-x-1 relative">
             <div id="sidebar-menu" class="sidebar-menu">
                 <ul>
                     <li class="sidebar-item-container pt-1">
@@ -88,14 +88,14 @@
                             <span class="ml-3">Crediti</span>
                         </a>
                     </li>
-                    <li class="pb-1 hover:bg-custom-light-grey">
+                    <li class="pb-1">
                         <a href="#" class="sidebar-item">
                             <span class="ml-3">Pagamenti</span>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div id="sidebar-toggle" class="hidden lg:block h-[60px] w-[40px] cursor-pointer mx-auto">
+            <div id="sidebar-toggle" class="sidebar-arrow-container sidebar-arrow-closed">
                 <img id="arrow" class="mx-auto h-full align-middle" src="../img/select-arrow.svg" width="20" height="12"
                      alt="menu-toggle">
             </div>
@@ -122,7 +122,7 @@
 
             <div class="contratti-card">
                 <div class="contratti-card-header">
-                    <label class="grow">Test 1</label>
+                    <label class="grow">Test 2</label>
                     <div class="flex gap-x-4">
                         <img src="../img/icon-pencil.svg" width="21" height="21" alt="icon-pencil">
                         <img src="../img/icon-trash.svg" width="21" height="21" alt="icon-trash">
@@ -141,7 +141,7 @@
 
             <div class="contratti-card">
                 <div class="contratti-card-header">
-                    <label class="grow">Test 1</label>
+                    <label class="grow">Test 3</label>
                     <div class="flex gap-x-4">
                         <img src="../img/icon-pencil.svg" width="21" height="21" alt="icon-pencil">
                         <img src="../img/icon-trash.svg" width="21" height="21" alt="icon-trash">
@@ -154,13 +154,17 @@
                 <div class="flex justify-between px-8 sm:px-4 justify-between absolute bottom-0 mb-4 w-full">
                     <button class="secondary-button text-[14px] text-custom-grey py-1 px-4 sm:px-3">Modifica Contratto
                     </button>
-                    <button class="primary-button text-[14px] bg-custom-blue py-1 px-4 sm:px-3">Acquista ora</button>
+                    <button class="primary-button text-[14px] bg-custom-dark-blue py-1 px-4 xs:px-3">Scarica contratto
+                    </button>
+                </div>
+                <div>
+                    <p class="text-info">Scopri quali sono gli adempimenti seccessivi</p>
                 </div>
             </div>
 
             <div class="contratti-card">
                 <div class="contratti-card-header">
-                    <label class="grow">Test 1</label>
+                    <label class="grow">Test 4</label>
                     <div class="flex gap-x-4">
                         <img src="../img/icon-pencil.svg" width="21" height="21" alt="icon-pencil">
                         <img src="../img/icon-trash.svg" width="21" height="21" alt="icon-trash">
@@ -173,12 +177,12 @@
                 <div class="flex justify-between px-8 sm:px-4 justify-between absolute bottom-0 mb-4 w-full">
                     <button class="secondary-button text-[14px] text-custom-grey py-1 px-4 xs:px-3">Modifica Contratto
                     </button>
-                    <button class="primary-button text-[14px] bg-custom-blue py-1 px-4 xs:px-3">Acquista ora</button>
+                    <button class="primary-button text-[14px] bg-custom-blue py-1 px-4 sm:px-3">Acquista ora</button>
                 </div>
             </div>
 
         </div>
-    </aside>
+    </div>
     <div class="chat-button-container">
         <button class="chat-button"></button>
     </div>
@@ -198,30 +202,31 @@
 <!--/FOOTER-->
 <script>
     window.addEventListener('DOMContentLoaded', () => {
-        const position = document.getElementById("selected");
-        const arrow = document.getElementById("arrow");
+        const selected = document.getElementById("selected");
         const toggler = document.getElementById("sidebar-toggle");
         const mediaQuery = window.matchMedia('(max-width: 1020px)');
         const menu = document.getElementsByClassName('sidebar-menu')[0];
-        const container = document.getElementById('sidebar-flex-container');
 
-        position.scrollIntoView();
+        selected.scrollIntoView();
 
         mediaQuery.addEventListener('change', function (e) {
-            position.scrollIntoView();
+            selected.scrollIntoView();
+        });
+
+        selected.addEventListener('click', function () {
+            if (mediaQuery.matches === true && toggler.classList.contains('sidebar-arrow-closed')) {
+                toggler.dispatchEvent(new Event("click"));
+            }
         });
 
         toggler.addEventListener('click', function () {
             this.x = ((this.x || 0) + 1) % 2;
             if (this.x) {
                 menu.classList.add('sidebar-menu-open');
-                arrow.classList.add('rotate-arrow');
-                container.classList.add('flex-col');
-
+                toggler.classList.remove('sidebar-arrow-closed');
             } else {
                 menu.classList.remove('sidebar-menu-open');
-                arrow.classList.remove('rotate-arrow');
-                container.classList.remove('flex-col');
+                toggler.classList.add('sidebar-arrow-closed');
             }
         });
 

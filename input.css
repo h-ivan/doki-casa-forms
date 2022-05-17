@@ -620,12 +620,6 @@
     min-w-[200px]
 }
 
-.rotate-arrow {
-    @apply
-    rotate-180
-    transition-all
-}
-
 #selected {
     @apply bg-custom-light-grey
 }
@@ -855,7 +849,7 @@
 
 .sidebar-menu-open {
     @apply
-    max-h-full
+    max-h-fit
     overflow-visible
 }
 
@@ -867,7 +861,7 @@
     flex
     flex-col
     relative
-    min-h-[220px]
+    min-h-[280px]
 }
 
 .contratti-card-header {
@@ -883,6 +877,25 @@
     sm:px-4
     flex
     justify-between
+}
+
+.sidebar-arrow-container {
+    @apply
+    hidden
+    lg:block
+    h-[60px]
+    w-[40px]
+    cursor-pointer
+    mx-auto
+    rotate-180
+}
+
+
+.sidebar-arrow-closed {
+    @apply
+    absolute
+    right-0
+    rotate-0
 }
 
 
