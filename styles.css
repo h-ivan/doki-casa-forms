@@ -1363,6 +1363,10 @@
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.contratti-card-open{
+  min-height: 470px !important;
+}
+
 /*! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com*/
 
 /*
@@ -1961,6 +1965,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0.75rem;
 }
 
+.mt-2{
+  margin-top: 0.5rem;
+}
+
+.mt-\[18px\]{
+  margin-top: 18px;
+}
+
 .mr-2{
   margin-right: 0.5rem;
 }
@@ -2003,6 +2015,30 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ml-12{
   margin-left: 3rem;
+}
+
+.mt-\[1px\]{
+  margin-top: 1px;
+}
+
+.mt-\[16px\]{
+  margin-top: 16px;
+}
+
+.mt-\[14px\]{
+  margin-top: 14px;
+}
+
+.mt-\[15px\]{
+  margin-top: 15px;
+}
+
+.mt-\[13px\]{
+  margin-top: 13px;
+}
+
+.mt-\[12px\]{
+  margin-top: 12px;
 }
 
 .block{
@@ -2129,6 +2165,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   min-height: 844px;
 }
 
+.min-h-\[100px\]{
+  min-height: 100px;
+}
+
 .min-h-\[742px\]{
   min-height: 742px;
 }
@@ -2219,6 +2259,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-grow: 1;
 }
 
+.rotate-180{
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .scale-125{
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
@@ -2241,6 +2286,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-cols-3{
@@ -2271,6 +2320,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 1rem;
 }
 
+.gap-1{
+  gap: 0.25rem;
+}
+
 .gap-x-6{
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
@@ -2299,6 +2352,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-x-12{
   -moz-column-gap: 3rem;
        column-gap: 3rem;
+}
+
+.self-start{
+  align-self: flex-start;
 }
 
 .self-end{
@@ -2346,12 +2403,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-width: 1px;
 }
 
-.border-r-0{
-  border-right-width: 0px;
-}
-
 .border-t{
   border-top-width: 1px;
+}
+
+.border-r-0{
+  border-right-width: 0px;
 }
 
 .border-none{
@@ -2366,11 +2423,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-custom-dark-green{
   --tw-border-opacity: 1;
   border-color: rgb(0 166 187 / var(--tw-border-opacity));
-}
-
-.border-custom-dark-grey{
-  --tw-border-opacity: 1;
-  border-color: rgb(135 135 135 / var(--tw-border-opacity));
 }
 
 .bg-custom-green{
@@ -2500,6 +2552,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 14px;
 }
 
+.text-\[12px\]{
+  font-size: 12px;
+}
+
 .text-\[18px\]{
   font-size: 18px;
 }
@@ -2517,8 +2573,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 22px;
 }
 
-.text-\[12px\]{
-  font-size: 12px;
+.text-\[15px\]{
+  font-size: 15px;
+}
+
+.text-\[1px\]{
+  font-size: 1px;
 }
 
 .font-bold{
@@ -2748,6 +2808,50 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 0px;
   }
 
+  .sm\:mt-\[\]{
+    margin-top: ;
+  }
+
+  .sm\:mt-\[-\]{
+    margin-top: -;
+  }
+
+  .sm\:mt-\[-1\]{
+    margin-top: -1;
+  }
+
+  .sm\:mt-\[-10\]{
+    margin-top: -10;
+  }
+
+  .sm\:mt-\[-0px\]{
+    margin-top: -0px;
+  }
+
+  .sm\:-mt-\[-40px\]{
+    margin-top: 40px;
+  }
+
+  .sm\:-mt-\[40px\]{
+    margin-top: -40px;
+  }
+
+  .sm\:-mt-\[0px\]{
+    margin-top: -0px;
+  }
+
+  .sm\:-mt-\[30px\]{
+    margin-top: -30px;
+  }
+
+  .sm\:-mt-\[38px\]{
+    margin-top: -38px;
+  }
+
+  .sm\:-mt-\[3px\]{
+    margin-top: -3px;
+  }
+
   .sm\:hidden{
     display: none;
   }
@@ -2766,6 +2870,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:h-\[85px\]{
     height: 85px;
+  }
+
+  .sm\:h-\[00px\]{
+    height: 00px;
+  }
+
+  .sm\:h-\[200px\]{
+    height: 200px;
   }
 
   .sm\:min-h-\[323px\]{
@@ -2878,6 +2990,18 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
+  .sm\:flex-col{
+    flex-direction: column;
+  }
+
+  .sm\:justify-start{
+    justify-content: flex-start;
+  }
+
+  .sm\:justify-items-start{
+    justify-items: start;
+  }
+
   .sm\:gap-x-2{
     -moz-column-gap: 0.5rem;
          column-gap: 0.5rem;
@@ -2934,6 +3058,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 12px;
   }
 
+  .sm\:text-\[1px\]{
+    font-size: 1px;
+  }
+
   .sm\:leading-4{
     line-height: 1rem;
   }
@@ -2944,6 +3072,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (max-width: 424px){
+  .xs\:-mt-\[0px\]{
+    margin-top: -0px;
+  }
+
+  .xs\:-mt-\[40px\]{
+    margin-top: -40px;
+  }
+
   .xs\:w-full{
     width: 100%;
   }

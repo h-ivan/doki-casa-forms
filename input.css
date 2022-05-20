@@ -898,6 +898,11 @@
     rotate-0
 }
 
+.contratti-card-open {
+    @apply
+    !min-h-[470px]
+}
+
 
 @tailwind base;
 @tailwind components;
