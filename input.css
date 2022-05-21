@@ -884,6 +884,22 @@
     justify-between
 }
 
+.label-badge {
+    @apply
+    text-custom-dark-grey
+    px-4 py-1
+    xs:w-[160px]
+    leading-4
+    font-light
+    bg-custom-green
+    bg-opacity-20
+    rounded-2xl
+    mr-auto
+    w-fit
+    text-[14px]
+    sm:text-[12px]
+}
+
 .sidebar-arrow-container {
     @apply
     hidden
@@ -892,6 +908,41 @@
     w-[40px]
     mx-auto
     rotate-180
+}
+
+.dettagli-button {
+    @apply
+    custom-shadow
+    cursor-pointer
+    rounded-2xl
+    hover:brightness-75
+    border-[1px]
+    border-custom-grey
+    text-[14px]
+    ml-auto
+    text-custom-grey
+    py-1
+    px-4
+    mb-2
+    xs:py-[5px]
+    xs:px-3
+    sm:-mt-[10px]
+}
+
+.procedura-button {
+    @apply
+    custom-shadow
+    cursor-pointer
+    text-custom-white
+    rounded-2xl
+    hover:brightness-105
+    text-[14px]
+    ml-auto
+    bg-custom-dark-blue
+    py-1
+    px-4
+    xs:px-3
+    xs:py-[5px]
 }
 
 
