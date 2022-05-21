@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="format-detection" content="telephone=no">
-    <link rel="shortcut icon" href="#"/>
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="telephone=no" name="format-detection">
+    <link href="#" rel="shortcut icon"/>
     <link href="../styles.css" rel="stylesheet">
     <title>DokiCasa</title>
 </head>
@@ -14,7 +14,7 @@
 <body class="body">
 <div class="heading-container">
     <div class="heading-content">
-        <img class="doki-logo" width="190" height="76" src="../img/logo-dokicasa.svg" alt="Doki Casa Logo">
+        <img alt="Doki Casa Logo" class="doki-logo" height="76" src="../img/logo-dokicasa.svg" width="190">
         <div class="flex items-center">
             <button class="primary-button text-[20px] sm:text-[14px] bg-custom-light-grey text-custom-blue mr-4 hover:brightness-90">
                 Area personale
@@ -44,7 +44,7 @@
                     </button>
                     <input class="search-input">
                 </div>
-                <select class="border-none shadow-md h-[58px] sm:h-[46px] bg-custom-light-grey md:w-full custom-select"
+                <select class="border-none shadow-md h-[58px] lg:h-[46px] bg-custom-light-grey md:w-full custom-select"
                         id="select-1">
                     <option disabled selected>Filtra i documenti</option>
                     <option value="option-1">option 1</option>
@@ -55,49 +55,50 @@
 
     </div>
     <div class="flex gap-x-8 mb-12 lg:flex-col lg:gap-y-8 items-start lg:items-stretch">
-        <div id="sidebar-flex-container" class="flex flex-col gap-x-1 relative">
-            <div id="sidebar-menu" class="sidebar-menu">
+        <div class="flex flex-col gap-x-1 relative" id="sidebar-flex-container">
+            <div class="sidebar-menu" id="sidebar-menu">
                 <ul>
                     <li class="sidebar-item-container pt-1">
-                        <a href="#" class="sidebar-item">
+                        <a class="sidebar-item" href="#">
                             <span class="ml-3">Profilo</span>
                         </a>
                     </li>
-                    <li id="selected" class="sidebar-item-container">
-                        <a href="#" class="sidebar-item">
+                    <li class="sidebar-item-container" id="selected">
+                        <a class="sidebar-item" href="#">
                             <span class="ml-3">Contratti</span>
                         </a>
                     </li>
                     <li class="sidebar-item-container">
-                        <a href="#" class="sidebar-item">
+                        <a class="sidebar-item" href="#">
                             <span class="ml-3">Firme Digitali</span>
                         </a>
                     </li>
                     <li class="sidebar-item-container">
-                        <a href="#" class="sidebar-item">
+                        <a class="sidebar-item" href="#">
                             <span class="ml-3">Pratiche</span>
                         </a>
                     </li>
                     <li class="sidebar-item-container">
-                        <a href="#" class="sidebar-item">
+                        <a class="sidebar-item" href="#">
                             <span class="ml-3">Canone Concordato</span>
                         </a>
                     </li>
                     <li class="sidebar-item-container">
-                        <a href="#" class="sidebar-item">
+                        <a class="sidebar-item" href="#">
                             <span class="ml-3">Crediti</span>
                         </a>
                     </li>
                     <li class="pb-1">
-                        <a href="#" class="sidebar-item">
+                        <a class="sidebar-item" href="#">
                             <span class="ml-3">Pagamenti</span>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div id="sidebar-toggle" class="sidebar-arrow-container sidebar-arrow-closed">
-                <img id="arrow" class="mx-auto h-full align-middle" src="../img/select-arrow.svg" width="20" height="12"
-                     alt="menu-toggle">
+            <div class="sidebar-arrow-container sidebar-arrow-closed" id="sidebar-toggle">
+                <img alt="menu-toggle" class="h-full align-middle" height="12" id="arrow"
+                     src="../img/select-arrow.svg"
+                     width="20">
             </div>
         </div>
         <div class="grid grid-cols-2 md:grid-cols-1 grow gap-4">
@@ -105,8 +106,8 @@
                 <div class="contratti-card-header">
                     <label class="grow">Test 3</label>
                     <div class="flex gap-x-4">
-                        <img src="../img/icon-pencil.svg" width="21" height="21" alt="icon-pencil">
-                        <img src="../img/icon-trash.svg" width="21" height="21" alt="icon-trash">
+                        <img alt="icon-pencil" height="21" src="../img/icon-pencil.svg" width="21">
+                        <img alt="icon-trash" height="21" src="../img/icon-trash.svg" width="21">
                     </div>
                 </div>
                 <div class="px-8 sm:px-4 py-4">
@@ -114,17 +115,15 @@
                     <p class="text-custom-grey text-[14px]">#5929 Creato il: 22/01/2022</p>
                 </div>
                 <div class="absolute bottom-0 w-full">
-                    <div class="flex justify-between px-8 sm:px-4 justify-between mb-4">
-                        <button class="secondary-button text-[14px] text-custom-grey py-1 px-4 sm:px-3">Modifica
+                    <div class="flex justify-between px-8 sm:px-4 mb-4">
+                        <button class="secondary-button text-[14px] sm:text-[12px] text-custom-grey py-1 px-4 sm:px-3">
+                            Modifica
                             Contratto
                         </button>
-                        <button class="primary-button text-[14px] bg-custom-blue py-1 px-4 xs:px-3">Acquista ora
+                        <button class="primary-button text-[14px] sm:text-[12px] bg-custom-blue py-1 px-4 xs:px-3">
+                            Acquista ora
                         </button>
                     </div>
-<!--                    <div class="border-t border-custom-grey py-2 px-8">-->
-<!--                        <p class="text-custom-grey text-[12px] underline">Scopri quali sono gli adempimenti-->
-<!--                            seccessivi</p>-->
-<!--                    </div>-->
                 </div>
             </div>
 
@@ -132,8 +131,8 @@
                 <div class="contratti-card-header">
                     <label class="grow">Test 3</label>
                     <div class="flex gap-x-4">
-                        <img src="../img/icon-pencil.svg" width="21" height="21" alt="icon-pencil">
-                        <img src="../img/icon-trash.svg" width="21" height="21" alt="icon-trash">
+                        <img alt="icon-pencil" height="21" src="../img/icon-pencil.svg" width="21">
+                        <img alt="icon-trash" height="21" src="../img/icon-trash.svg" width="21">
                     </div>
                 </div>
                 <div class="px-8 sm:px-4 py-4">
@@ -141,17 +140,15 @@
                     <p class="text-custom-grey text-[14px]">#5929 Creato il: 22/01/2022</p>
                 </div>
                 <div class="absolute bottom-0 w-full">
-                    <div class="flex justify-between px-8 sm:px-4 justify-between mb-4">
-                        <button class="secondary-button text-[14px] text-custom-grey py-1 px-4 sm:px-3">Modifica
+                    <div class="flex justify-between px-8 sm:px-4 mb-4">
+                        <button class="secondary-button text-[14px] sm:text-[12px] text-custom-grey py-1 px-4 sm:px-3">
+                            Modifica
                             Contratto
                         </button>
-                        <button class="primary-button text-[14px] bg-custom-blue py-1 px-4 xs:px-3">Acquista ora
+                        <button class="primary-button text-[14px] sm:text-[12px] bg-custom-blue py-1 px-4 xs:px-3">
+                            Acquista ora
                         </button>
                     </div>
-<!--                    <div class="border-t border-custom-grey py-2 px-8">-->
-<!--                        <p class="text-custom-grey text-[12px] underline">Scopri quali sono gli adempimenti-->
-<!--                            seccessivi</p>-->
-<!--                    </div>-->
                 </div>
             </div>
 
@@ -159,8 +156,8 @@
                 <div class="contratti-card-header">
                     <label class="grow">Test 3</label>
                     <div class="flex gap-x-4">
-                        <img src="../img/icon-pencil.svg" width="21" height="21" alt="icon-pencil">
-                        <img src="../img/icon-trash.svg" width="21" height="21" alt="icon-trash">
+                        <img alt="icon-pencil" height="21" src="../img/icon-pencil.svg" width="21">
+                        <img alt="icon-trash" height="21" src="../img/icon-trash.svg" width="21">
                     </div>
                 </div>
                 <div class="px-8 sm:px-4 py-4">
@@ -168,11 +165,13 @@
                     <p class="text-custom-grey text-[14px]">#5929 Creato il: 22/01/2022</p>
                 </div>
                 <div class="absolute bottom-0 w-full">
-                    <div class="flex justify-between px-8 sm:px-4 justify-between mb-4">
-                        <button class="secondary-button text-[14px] text-custom-grey py-1 px-4 sm:px-3">Modifica
+                    <div class="flex justify-between px-8 sm:px-4 mb-4">
+                        <button class="secondary-button text-[14px] sm:text-[12px] text-custom-grey py-1 px-4 sm:px-3">
+                            Modifica
                             Contratto
                         </button>
-                        <button class="primary-button text-[14px] bg-custom-dark-blue py-1 px-4 xs:px-3">Scarica
+                        <button class="primary-button text-[14px] sm:text-[12px] bg-custom-dark-blue py-1 px-3 xs:px-3">
+                            Scarica
                             contratto
                         </button>
                     </div>
@@ -187,8 +186,8 @@
                 <div class="contratti-card-header">
                     <label class="grow">Test 3</label>
                     <div class="flex gap-x-4">
-                        <img src="../img/icon-pencil.svg" width="21" height="21" alt="icon-pencil">
-                        <img src="../img/icon-trash.svg" width="21" height="21" alt="icon-trash">
+                        <img alt="icon-pencil" height="21" src="../img/icon-pencil.svg" width="21">
+                        <img alt="icon-trash" height="21" src="../img/icon-trash.svg" width="21">
                     </div>
                 </div>
                 <div class="px-8 sm:px-4 py-4">
@@ -196,17 +195,15 @@
                     <p class="text-custom-grey text-[14px]">#5929 Creato il: 22/01/2022</p>
                 </div>
                 <div class="absolute bottom-0 w-full">
-                    <div class="flex justify-between px-8 sm:px-4 justify-between mb-4">
-                        <button class="secondary-button text-[14px] text-custom-grey py-1 px-4 sm:px-3">Modifica
+                    <div class="flex justify-between px-8 sm:px-4 mb-4">
+                        <button class="secondary-button text-[14px] sm:text-[12px] text-custom-grey py-1 px-4 sm:px-3">
+                            Modifica
                             Contratto
                         </button>
-                        <button class="primary-button text-[14px] bg-custom-blue py-1 px-4 xs:px-3">Acquista ora
+                        <button class="primary-button text-[14px] sm:text-[12px] bg-custom-blue py-1 px-4 xs:px-3">
+                            Acquista ora
                         </button>
                     </div>
-<!--                    <div class="border-t border-custom-grey py-2 px-8">-->
-<!--                        <p class="text-custom-grey text-[12px] underline">Scopri quali sono gli adempimenti-->
-<!--                            seccessivi</p>-->
-<!--                    </div>-->
                 </div>
             </div>
 
@@ -223,7 +220,7 @@
         <p>Dokidoc SRL - P.IVA 12248530011</p>
         <p class="mx-2">|</p>
         <div class="flex">
-            <img class="self-center mr-1" src="../img/icon-whatsapp.svg" width="13" height="13" alt="Whatsapp Icon">
+            <img alt="Whatsapp Icon" class="self-center mr-1" height="13" src="../img/icon-whatsapp.svg" width="13">
             <p>347 9026514</p>
         </div>
     </div>
