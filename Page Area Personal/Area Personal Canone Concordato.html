@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="telephone=no" name="format-detection">
+    <link href="#" rel="shortcut icon"/>
+    <link href="../styles.css" rel="stylesheet">
+    <title>DokiCasa</title>
+</head>
+<!--HEADER-->
+<body class="body">
+<div class="heading-container">
+    <div class="heading-content">
+        <img alt="Doki Casa Logo" class="doki-logo" height="76" src="../img/logo-dokicasa.svg" width="190">
+        <div class="flex items-center">
+            <button class="primary-button text-[20px] sm:text-[14px] bg-custom-light-grey text-custom-blue mr-4 hover:brightness-90">
+                Area personale
+            </button>
+            <div class="text-custom-dark-grey italic">Esci</div>
+        </div>
+    </div>
+</div>
+<!--/HEADER-->
+<!--CONTENT-->
+<div class="content-section">
+    <div class="content-flex-wrapper">
+        <div>
+            <h2 class="content-title-card text-[26px] sm:text-base">
+                Ciao Nicolo!
+            </h2>
+            <p class="info-small text-custom-dark-green sm:hidden">
+                Hai bisogno di supporto? Scrivi a <a class="font-medium" href="mailto:servizi@dokicasa.it">servizi@dokicasa.it</a>
+                oppure contattaci
+            </p>
+            <div class="content-container-contratti">
+                <div class="flex grow gap-x-6 sm:gap-x-2">
+                    <button class="documento-button bg-custom-dark-green">
+                        CREA
+                        NUOVO
+                        DOCUMENTO
+                    </button>
+                    <input class="search-input">
+                </div>
+                <select class="border-none shadow-md h-[58px] lg:h-[46px] bg-custom-light-grey md:w-full custom-select"
+                        id="select-1">
+                    <option disabled selected>Filtra i documenti</option>
+                    <option value="option-1">option 1</option>
+                    <option value="option-2">option 2</option>
+                </select>
+            </div>
+        </div>
+
+    </div>
+    <div class="flex gap-x-8 mb-12 lg:flex-col lg:gap-y-8 items-start lg:items-stretch">
+        <div class="flex flex-col gap-x-1 relative" id="sidebar-flex-container">
+            <div class="sidebar-menu" id="sidebar-menu">
+                <ul>
+                    <li class="sidebar-item-container pt-1">
+                        <a class="sidebar-item" href="#">
+                            <span class="ml-3">Profilo</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item-container">
+                        <a class="sidebar-item" href="#">
+                            <span class="ml-3">Contratti</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item-container">
+                        <a class="sidebar-item" href="#">
+                            <span class="ml-3">Firme Digitali</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item-container">
+                        <a class="sidebar-item" href="#">
+                            <span class="ml-3">Pratiche</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item-container" id="selected">
+                        <a class="sidebar-item" href="#">
+                            <span class="ml-3">Canone Concordato</span>
+                        </a>
+                    </li>
+                    <li class="sidebar-item-container">
+                        <a class="sidebar-item" href="#">
+                            <span class="ml-3">Crediti</span>
+                        </a>
+                    </li>
+                    <li class="pb-1">
+                        <a class="sidebar-item" href="#">
+                            <span class="ml-3">Pagamenti</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sidebar-arrow-container sidebar-arrow-closed" id="sidebar-toggle">
+                <img alt="menu-toggle" class="h-full align-middle" height="12" id="arrow"
+                     src="../img/select-arrow.svg"
+                     width="20">
+            </div>
+        </div>
+        <div class="grid grid-cols-1 grow gap-4">
+            <!--CARD 1-->
+            <div class="contratti-card min-h-[100px] h-full sm:mb-4">
+                <div class="flex justify-between mr-4  sm:justify-start">
+                    <div class="px-8 sm:px-4 py-4">
+                        <p class="text-custom-blue font-medium text-[18px] sm:text-[14px] mb-1">Test</p>
+                        <p class="text-custom-grey font-light text-[14px] sm:text-[12px]">#5929</p>
+                        <p class="text-custom-grey font-light text-[14px] sm:text-[12px] italic mb-2">Canone Concordato
+                            Roma</p>
+                        <p class="text-custom-grey font-light text-[14px] sm:text-[12px] italic">Creato il:
+                            10/12/2021</p>
+                    </div>
+                    <div class="flex flex-col gap-1 mt-4 grow">
+                        <div class="progress-bar-concordato ml-auto">
+                            <div class="step first-step step-complete-concordato">
+                                <div class="current-step">1</div>
+                            </div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step last-step"></div>
+                        </div>
+                        <button class="procedura-button card-open">Vedi stato Pratica</button>
+                        <img alt="card-toggle"
+                             class="ml-auto rotate-180 card-close hidden mr-1 my-4 cursor-pointer sm:mt-0"
+                             height="12"
+                             src="../img/select-arrow.svg"
+                             width="20">
+                    </div>
+                </div>
+                <div class="hidden border-t border-custom-grey mt-4 hidden card-full sm:h-full">
+                    <div class="flex p-8">
+                        <div class="w-[110px] h-[85px] self-center rounded-2xl bg-custom-blue flex flex-col justify-center items-center">
+                            <p class="text-custom-white font-medium mb-1.5">Step 1</p>
+                            <img alt="" height="19" src="../img/check-white.svg" width="24">
+                        </div>
+                        <div class="flex-grow">
+                            <p class="font-[16px] px-8 pt-4 font-medium text-custom-dark-grey block">Foglio
+                                Caratteristiche</p>
+                            <p class="font-[16px] px-8 pt-1 font-light text-custom-dark-grey block">Richiesto il
+                                10/12/21</p>
+                        </div>
+                        <div class="flex flex-col content-center self-center">
+                            <button class="secondary-button bg-custom-grey mb-2 text-[14px] sm:text-[12px] text-custom-white py-1 px-4 sm:px-3">
+                                Scarica
+                            </button>
+                            <button class="secondary-button text-[14px] sm:text-[12px] text-custom-grey py-1 px-4 sm:px-3">
+                                Modifica
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="flex p-8">
+                        <div>
+                            <div class="w-[1px] h-[20px] mx-auto bg-custom-grey decoration-dotted"></div>
+                            <div class="w-[110px] h-[85px] self-center rounded-2xl bg-custom-light-grey flex flex-col justify-center items-center">
+                                <p class="text-custom-dark-grey font-medium">Step 2</p>
+                            </div>
+                        </div>
+                        <div class="flex-grow">
+                            <p class="font-[16px] px-8 pt-4 font-medium text-custom-dark-grey block">Foglio
+                                Caratteristiche</p>
+                            <p class="font-[16px] px-8 pt-1 font-light text-custom-dark-grey block">Richiesto il
+                                10/12/21</p>
+                        </div>
+                        <div class="flex flex-col content-center self-center">
+                            <button class="secondary-button bg-custom-grey mb-2 text-[14px] sm:text-[12px] text-custom-white py-1 px-4 sm:px-3">
+                                Scarica
+                            </button>
+                            <button class="secondary-button text-[14px] sm:text-[12px] text-custom-grey py-1 px-4 sm:px-3">
+                                Modifica
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--CARD 1 END-->
+
+        </div>
+    </div>
+    <div class="chat-button-container">
+        <button class="chat-button"></button>
+    </div>
+</div>
+<!--/CONTENT-->
+<!--FOOTER-->
+<footer class="footer-container">
+    <div class="footer-content">
+        <p>Dokidoc SRL - P.IVA 12248530011</p>
+        <p class="mx-2">|</p>
+        <div class="flex">
+            <img alt="Whatsapp Icon" class="self-center mr-1" height="13" src="../img/icon-whatsapp.svg" width="13">
+            <p>347 9026514</p>
+        </div>
+    </div>
+</footer>
+<!--/FOOTER-->
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const selected = document.getElementById("selected");
+        const toggler = document.getElementById("sidebar-toggle");
+        const mediaQuery = window.matchMedia('(max-width: 1020px)');
+        const menu = document.getElementsByClassName('sidebar-menu')[0];
+
+        selected.scrollIntoView();
+
+        mediaQuery.addEventListener('change', function (e) {
+            selected.scrollIntoView();
+        });
+
+        selected.addEventListener('click', function () {
+            if (mediaQuery.matches === true && toggler.classList.contains('sidebar-arrow-closed')) {
+                toggler.dispatchEvent(new Event("click"));
+            }
+        });
+
+        toggler.addEventListener('click', function () {
+            this.x = ((this.x || 0) + 1) % 2;
+            if (this.x) {
+                menu.classList.add('sidebar-menu-open');
+                toggler.classList.remove('sidebar-arrow-closed');
+            } else {
+                menu.classList.remove('sidebar-menu-open');
+                toggler.classList.add('sidebar-arrow-closed');
+            }
+        });
+
+        // CARD TOGGLE
+
+        const cardOpen = document.getElementsByClassName("card-open");
+        const cardClose = document.getElementsByClassName("card-close");
+
+        [].forEach.call(cardOpen, function (e) {
+            const card = e.closest(".contratti-card");
+            const cardFull = e.parentElement.parentElement.nextElementSibling;
+            const cardCloseButton = e.nextElementSibling;
+            e.addEventListener('click', function () {
+                card.classList.add('contratti-card-open');
+                cardCloseButton.classList.remove('hidden');
+                e.classList.add('hidden');
+                cardFull.classList.remove('hidden');
+            });
+        });
+
+        [].forEach.call(cardClose, function (e) {
+            const card = e.closest(".contratti-card");
+            const cardOpenButton = e.previousElementSibling;
+            const cardFull = e.parentElement.parentElement.nextElementSibling;
+            e.addEventListener('click', function () {
+                card.classList.remove('contratti-card-open');
+                cardOpenButton.classList.remove('hidden');
+                e.classList.add('hidden');
+                cardFull.classList.add('hidden');
+            });
+        });
+
+
+    });
+</script>
+</body>
+</html>

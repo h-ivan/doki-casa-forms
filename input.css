@@ -435,15 +435,35 @@
 }
 
 .progress-bar {
-    grid-template-columns: repeat(20, 1fr);
     @apply
     grid
+    grid-cols-[repeat(20,1fr)]
     grid-rows-1
     gap-0
     h-8
     mb-14
     mt-4
     sm:hidden
+}
+
+.progress-bar-concordato {
+    @apply
+    grid
+    grid-rows-1
+    gap-0
+    sm:h-4
+    h-6
+    mb-4
+    mt-4
+    grid-cols-8
+    grid-cols-[repeat(8,20px)]
+    sm:grid-cols-[repeat(8,12px)]
+}
+
+.step-complete-concordato {
+    @apply
+    bg-custom-blue
+    bg-opacity-20
 }
 
 .step {
@@ -840,7 +860,7 @@
 .sidebar-menu {
     @apply
     overflow-y-auto
-    shadow-md
+    custom-shadow
     rounded-2xl
     outline-custom-dark-grey
     min-w-[325px]
@@ -941,7 +961,8 @@
     bg-custom-dark-blue
     py-1
     px-4
-    xs:px-3
+    sm:text-[12px]
+    xs:px-2
     xs:py-[5px]
 }
 
@@ -956,7 +977,7 @@
 
 .contratti-card-open {
     @apply
-    !min-h-[470px]
+    !min-h-full
 }
 
 
