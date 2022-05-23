@@ -1507,6 +1507,110 @@
   min-height: 100% !important;
 }
 
+.dotted-line{
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  bottom: 50%;
+  left: 50%;
+  right: 0px;
+  top: -80px;
+  z-index: -10;
+  height: 100px;
+  width: 1px;
+  border-left-width: 2px;
+  border-style: dotted;
+  --tw-border-opacity: 1;
+  border-color: rgb(185 185 185 / var(--tw-border-opacity));
+}
+
+.step-box{
+  display: flex;
+  height: 85px;
+  width: 110px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  border-radius: 1rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 83 132 / var(--tw-bg-opacity));
+}
+
+@media (max-width: 639px){
+  .step-box{
+    min-width: 76px;
+  }
+}
+
+.scarica-button{
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(185 185 185 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 185 185 / var(--tw-bg-opacity));
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 14px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.09);
+}
+
+.scarica-button:hover{
+  --tw-brightness: brightness(.75);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@media (max-width: 639px){
+  .scarica-button{
+    margin-right: 0.5rem;
+    width: 100%;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-size: 12px;
+  }
+}
+
+.modifica-button{
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(185 185 185 / var(--tw-border-opacity));
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 14px;
+  --tw-text-opacity: 1;
+  color: rgb(185 185 185 / var(--tw-text-opacity));
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.09);
+}
+
+.modifica-button:hover{
+  --tw-brightness: brightness(.75);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@media (max-width: 639px){
+  .modifica-button{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    font-size: 12px;
+  }
+}
+
+.shadow-richiedi {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.09);
+}
+
 /*! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com*/
 
 /*
@@ -2110,6 +2214,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 0.75rem;
 }
 
+.mb-1\.5{
+  margin-bottom: 0.375rem;
+}
+
 .mt-3{
   margin-top: 0.75rem;
 }
@@ -2166,18 +2274,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-left: 3rem;
 }
 
-.ml-4{
-  margin-left: 1rem;
-}
-
-.mb-1\.5{
-  margin-bottom: 0.375rem;
-}
-
-.-mt-\[10px\]{
-  margin-top: -10px;
-}
-
 .block{
   display: block;
 }
@@ -2220,22 +2316,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[60px\]{
   height: 60px;
-}
-
-.h-\[85px\]{
-  height: 85px;
-}
-
-.h-\[\]{
-  height: ;
-}
-
-.h-\[2\]{
-  height: 2;
-}
-
-.h-\[20px\]{
-  height: 20px;
 }
 
 .min-h-\[572px\]{
@@ -2372,18 +2452,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[1px\]{
   width: 1px;
-}
-
-.w-\[110px\]{
-  width: 110px;
-}
-
-.w-\[1\]{
-  width: 1;
-}
-
-.w-\[1p\]{
-  width: 1p;
 }
 
 .max-w-\[490px\]{
@@ -2593,6 +2661,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(185 185 185 / var(--tw-border-opacity));
 }
 
+.border-custom-light-grey{
+  --tw-border-opacity: 1;
+  border-color: rgb(238 238 238 / var(--tw-border-opacity));
+}
+
 .border-custom-dark-green{
   --tw-border-opacity: 1;
   border-color: rgb(0 166 187 / var(--tw-border-opacity));
@@ -2638,10 +2711,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .p-5{
   padding: 1.25rem;
-}
-
-.p-4{
-  padding: 1rem;
 }
 
 .p-8{
@@ -2706,16 +2775,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.25rem;
 }
 
+.pt-4{
+  padding-top: 1rem;
+}
+
 .pb-8{
   padding-bottom: 2rem;
 }
 
 .pb-0{
   padding-bottom: 0px;
-}
-
-.pt-4{
-  padding-top: 1rem;
 }
 
 .text-center{
@@ -2815,24 +2884,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(0 166 187 / var(--tw-text-opacity));
 }
 
-.text-custom-dark-blue{
-  --tw-text-opacity: 1;
-  color: rgb(0 3 51 / var(--tw-text-opacity));
-}
-
 .text-custom-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-custom-dark-blue{
+  --tw-text-opacity: 1;
+  color: rgb(0 3 51 / var(--tw-text-opacity));
+}
+
 .underline{
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-}
-
-.decoration-dotted{
-  -webkit-text-decoration-style: dotted;
-          text-decoration-style: dotted;
 }
 
 .shadow-md{
@@ -2994,6 +3058,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .sm\:mt-0{
     margin-top: 0px;
+  }
+
+  .sm\:mb-1{
+    margin-bottom: 0.25rem;
   }
 
   .sm\:-mt-\[30px\]{
@@ -3159,6 +3227,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     row-gap: 1rem;
   }
 
+  .sm\:self-start{
+    align-self: flex-start;
+  }
+
   .sm\:p-4{
     padding: 1rem;
   }
@@ -3181,6 +3253,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .sm\:pt-0{
+    padding-top: 0px;
   }
 
   .sm\:text-xs{
@@ -3228,6 +3304,18 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 100%;
   }
 
+  .xs\:flex-row{
+    flex-direction: row;
+  }
+
+  .xs\:flex-col{
+    flex-direction: column;
+  }
+
+  .xs\:self-start{
+    align-self: flex-start;
+  }
+
   .xs\:px-3{
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -3236,6 +3324,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   .xs\:px-4{
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .xs\:text-\[12px\]{
+    font-size: 12px;
   }
 }
 

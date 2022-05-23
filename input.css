@@ -980,6 +980,76 @@
     !min-h-full
 }
 
+.dotted-line {
+    @apply
+    w-[1px]
+    h-[100px]
+    absolute
+    right-0
+    inset-1/2
+    top-[-80px]
+    -z-10
+    border-custom-grey
+    border-dotted
+    border-l
+    border-l-2
+}
+
+.step-box {
+    @apply
+    w-[110px]
+    h-[85px]
+    self-center
+    rounded-2xl
+    bg-custom-blue
+    flex
+    flex-col
+    justify-center
+    items-center
+    sm:min-w-[76px]
+}
+
+.scarica-button {
+    @apply
+    custom-shadow
+    cursor-pointer
+    rounded-2xl
+    hover:brightness-75
+    border-[1px]
+    border-custom-grey
+    mb-2
+    text-[14px]
+    text-custom-white
+    py-0
+    px-4
+    sm:text-[12px]
+    sm:px-3
+    sm:mr-2
+    bg-custom-grey
+    sm:w-full
+}
+
+.modifica-button {
+    @apply
+    custom-shadow
+    cursor-pointer
+    rounded-2xl
+    hover:brightness-75
+    border-[1px]
+    border-custom-grey
+    mb-2
+    text-[14px]
+    sm:text-[12px]
+    text-custom-grey
+    py-0
+    px-4
+    sm:px-3
+}
+
+.shadow-richiedi {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.09);
+}
+
 
 @tailwind base;
 @tailwind components;

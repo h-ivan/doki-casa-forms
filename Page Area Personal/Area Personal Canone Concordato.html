@@ -106,8 +106,13 @@
             <div class="contratti-card min-h-[100px] h-full sm:mb-4">
                 <div class="flex justify-between mr-4  sm:justify-start">
                     <div class="px-8 sm:px-4 py-4">
-                        <p class="text-custom-blue font-medium text-[18px] sm:text-[14px] mb-1">Test</p>
-                        <p class="text-custom-grey font-light text-[14px] sm:text-[12px]">#5929</p>
+                        <div class="flex gap-x-4 items-center mb-2">
+                            <p class="text-custom-blue font-medium text-[18px] sm:text-[14px] mb-1">Test 1</p>
+                            <p class="text-custom-grey font-light text-[14px] sm:text-[12px]">#5929</p>
+                            <a href="#">
+                                <img alt="edit" height="21" src="../img/icon-pencil.svg" width="21">
+                            </a>
+                        </div>
                         <p class="text-custom-grey font-light text-[14px] sm:text-[12px] italic mb-2">Canone Concordato
                             Roma</p>
                         <p class="text-custom-grey font-light text-[14px] sm:text-[12px] italic">Creato il:
@@ -135,52 +140,499 @@
                     </div>
                 </div>
                 <div class="hidden border-t border-custom-grey mt-4 hidden card-full sm:h-full">
-                    <div class="flex p-8">
-                        <div class="w-[110px] h-[85px] self-center rounded-2xl bg-custom-blue flex flex-col justify-center items-center">
+                    <!--STEP 1-->
+                    <div class="flex p-8 sm:px-4">
+                        <div class="step-box bg-custom-blue sm:self-start">
                             <p class="text-custom-white font-medium mb-1.5">Step 1</p>
                             <img alt="" height="19" src="../img/check-white.svg" width="24">
                         </div>
-                        <div class="flex-grow">
-                            <p class="font-[16px] px-8 pt-4 font-medium text-custom-dark-grey block">Foglio
-                                Caratteristiche</p>
-                            <p class="font-[16px] px-8 pt-1 font-light text-custom-dark-grey block">Richiesto il
-                                10/12/21</p>
-                        </div>
-                        <div class="flex flex-col content-center self-center">
-                            <button class="secondary-button bg-custom-grey mb-2 text-[14px] sm:text-[12px] text-custom-white py-1 px-4 sm:px-3">
-                                Scarica
-                            </button>
-                            <button class="secondary-button text-[14px] sm:text-[12px] text-custom-grey py-1 px-4 sm:px-3">
-                                Modifica
-                            </button>
+                        <div class="flex justify-between w-full xs:flex-col">
+                            <div class="flex-grow">
+                                <p class="px-8 sm:px-4 pt-4 xs:text-[12px] sm:pt-0 font-medium text-custom-dark-grey block">
+                                    Foglio
+                                    Caratteristiche</p>
+                                <p class="px-8 xs:text-[12px] sm:px-4 pt-1 font-light text-custom-dark-grey block sm:mb-1">
+                                    Richiesto il
+                                    10/12/21</p>
+                            </div>
+                            <div class="flex flex-col sm:px-4 content-center self-center xs:self-start xs:flex-row">
+                                <button class="scarica-button">
+                                    Scarica
+                                </button>
+                                <button class="modifica-button">
+                                    Modifica
+                                </button>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="flex p-8">
-                        <div>
-                            <div class="w-[1px] h-[20px] mx-auto bg-custom-grey decoration-dotted"></div>
-                            <div class="w-[110px] h-[85px] self-center rounded-2xl bg-custom-light-grey flex flex-col justify-center items-center">
+                    <!--STEP 2-->
+                    <div class="flex p-8 sm:px-4">
+                        <div class="step-box bg-custom-light-grey sm:self-start relative">
+                            <div class="dotted-line"></div>
+                            <div>
                                 <p class="text-custom-dark-grey font-medium">Step 2</p>
                             </div>
                         </div>
-                        <div class="flex-grow">
-                            <p class="font-[16px] px-8 pt-4 font-medium text-custom-dark-grey block">Foglio
-                                Caratteristiche</p>
-                            <p class="font-[16px] px-8 pt-1 font-light text-custom-dark-grey block">Richiesto il
-                                10/12/21</p>
+                        <div class="flex justify-between w-full xs:flex-col">
+                            <div class="flex-grow">
+                                <p class="px-8 xs:text-[12px] sm:px-4 pt-4 sm:pt-0 font-medium text-custom-dark-grey block">
+                                    Pre-Calcolo Canone</p>
+                                <p class="text-[12px] px-8 sm:px-4 pt-1 font-light text-custom-dark-grey block sm:mb-1">
+                                    tempistiche di lavorazione della pratica</p>
+                            </div>
+                            <div class="flex flex-col sm:px-4 self-center content-center xs:self-start xs:flex-row">
+                                <button class="modifica-button sm:w-full shadow-richiedi border-custom-light-grey">
+                                    Richiedi
+                                </button>
+                            </div>
                         </div>
-                        <div class="flex flex-col content-center self-center">
-                            <button class="secondary-button bg-custom-grey mb-2 text-[14px] sm:text-[12px] text-custom-white py-1 px-4 sm:px-3">
-                                Scarica
-                            </button>
-                            <button class="secondary-button text-[14px] sm:text-[12px] text-custom-grey py-1 px-4 sm:px-3">
-                                Modifica
-                            </button>
+                    </div>
+                    <!--STEP 3-->
+                    <div class="flex p-8 sm:px-4">
+                        <div class="step-box bg-custom-light-grey sm:self-start relative">
+                            <div class="dotted-line"></div>
+                            <div>
+                                <p class="text-custom-dark-grey font-medium">Step 3</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between w-full xs:flex-col">
+                            <div class="flex-grow">
+                                <p class="px-8 sm:px-4 xs:text-[12px] pt-4 sm:pt-0 font-medium text-custom-dark-grey block">
+                                    Calcolo del Canone</p>
+                                <p class="text-[12px] px-8 sm:px-4 pt-1 font-light text-custom-dark-grey block sm:mb-1">
+                                    tempistiche di lavorazione della pratica</p>
+                            </div>
+                            <div class="flex flex-col sm:px-4 self-center content-center xs:self-start xs:flex-row">
+                                <button class="modifica-button sm:w-full shadow-richiedi border-custom-light-grey">
+                                    Richiedi
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--STEP 4-->
+                    <div class="flex p-8 sm:px-4">
+                        <div class="step-box bg-custom-light-grey sm:self-start relative">
+                            <div class="dotted-line"></div>
+                            <div>
+                                <p class="text-custom-dark-grey font-medium">Step 4</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between w-full xs:flex-col">
+                            <div class="flex-grow">
+                                <p class="px-8 xs:text-[12px] sm:px-4 pt-4 sm:pt-0 font-medium text-custom-dark-grey block">
+                                    Contratto Agevolato 3+2</p>
+                                <p class="px-8 xs:text-[12px] sm:px-4 pt-1 font-light text-custom-dark-grey block sm:mb-1">
+                                    Contratto transitorio</p>
+                            </div>
+                            <div class="flex flex-col sm:px-4 self-center content-center xs:self-start xs:flex-row">
+                                <button class="modifica-button sm:w-full shadow-richiedi border-custom-light-grey">
+                                    Richiedi
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!--CARD 1 END-->
+
+            <!--CARD 2-->
+            <div class="contratti-card min-h-[100px] h-full sm:mb-4">
+                <div class="flex justify-between mr-4  sm:justify-start">
+                    <div class="px-8 sm:px-4 py-4">
+                        <div class="flex gap-x-4 items-center mb-2">
+                            <p class="text-custom-blue font-medium text-[18px] sm:text-[14px] mb-1">Test 2</p>
+                            <p class="text-custom-grey font-light text-[14px] sm:text-[12px]">#5929</p>
+                            <a href="#">
+                                <img alt="edit" height="21" src="../img/icon-pencil.svg" width="21">
+                            </a>
+                        </div>
+                        <p class="text-custom-grey font-light text-[14px] sm:text-[12px] italic mb-2">Canone Concordato
+                            Roma</p>
+                        <p class="text-custom-grey font-light text-[14px] sm:text-[12px] italic">Creato il:
+                            10/12/2021</p>
+                    </div>
+                    <div class="flex flex-col gap-1 mt-4 grow">
+                        <div class="progress-bar-concordato ml-auto">
+                            <div class="step first-step step-complete-concordato">
+                                <div class="current-step">1</div>
+                            </div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step last-step"></div>
+                        </div>
+                        <button class="procedura-button card-open">Vedi stato Pratica</button>
+                        <img alt="card-toggle"
+                             class="ml-auto rotate-180 card-close hidden mr-1 my-4 cursor-pointer sm:mt-0"
+                             height="12"
+                             src="../img/select-arrow.svg"
+                             width="20">
+                    </div>
+                </div>
+                <div class="hidden border-t border-custom-grey mt-4 hidden card-full sm:h-full">
+                    <!--STEP 1-->
+                    <div class="flex p-8 sm:px-4">
+                        <div class="step-box bg-custom-blue sm:self-start">
+                            <p class="text-custom-white font-medium mb-1.5">Step 1</p>
+                            <img alt="" height="19" src="../img/check-white.svg" width="24">
+                        </div>
+                        <div class="flex justify-between w-full xs:flex-col">
+                            <div class="flex-grow">
+                                <p class="px-8 sm:px-4 pt-4 xs:text-[12px] sm:pt-0 font-medium text-custom-dark-grey block">
+                                    Foglio
+                                    Caratteristiche</p>
+                                <p class="px-8 xs:text-[12px] sm:px-4 pt-1 font-light text-custom-dark-grey block sm:mb-1">
+                                    Richiesto il
+                                    10/12/21</p>
+                            </div>
+                            <div class="flex flex-col sm:px-4 content-center self-center xs:self-start xs:flex-row">
+                                <button class="scarica-button">
+                                    Scarica
+                                </button>
+                                <button class="modifica-button">
+                                    Modifica
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--STEP 2-->
+                    <div class="flex p-8 sm:px-4">
+                        <div class="step-box bg-custom-light-grey sm:self-start relative">
+                            <div class="dotted-line"></div>
+                            <div>
+                                <p class="text-custom-dark-grey font-medium">Step 2</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between w-full xs:flex-col">
+                            <div class="flex-grow">
+                                <p class="px-8 xs:text-[12px] sm:px-4 pt-4 sm:pt-0 font-medium text-custom-dark-grey block">
+                                    Pre-Calcolo Canone</p>
+                                <p class="text-[12px] px-8 sm:px-4 pt-1 font-light text-custom-dark-grey block sm:mb-1">
+                                    tempistiche di lavorazione della pratica</p>
+                            </div>
+                            <div class="flex flex-col sm:px-4 self-center content-center xs:self-start xs:flex-row">
+                                <button class="modifica-button sm:w-full shadow-richiedi border-custom-light-grey">
+                                    Richiedi
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--STEP 3-->
+                    <div class="flex p-8 sm:px-4">
+                        <div class="step-box bg-custom-light-grey sm:self-start relative">
+                            <div class="dotted-line"></div>
+                            <div>
+                                <p class="text-custom-dark-grey font-medium">Step 3</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between w-full xs:flex-col">
+                            <div class="flex-grow">
+                                <p class="px-8 sm:px-4 xs:text-[12px] pt-4 sm:pt-0 font-medium text-custom-dark-grey block">
+                                    Calcolo del Canone</p>
+                                <p class="text-[12px] px-8 sm:px-4 pt-1 font-light text-custom-dark-grey block sm:mb-1">
+                                    tempistiche di lavorazione della pratica</p>
+                            </div>
+                            <div class="flex flex-col sm:px-4 self-center content-center xs:self-start xs:flex-row">
+                                <button class="modifica-button sm:w-full shadow-richiedi border-custom-light-grey">
+                                    Richiedi
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--STEP 4-->
+                    <div class="flex p-8 sm:px-4">
+                        <div class="step-box bg-custom-light-grey sm:self-start relative">
+                            <div class="dotted-line"></div>
+                            <div>
+                                <p class="text-custom-dark-grey font-medium">Step 4</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between w-full xs:flex-col">
+                            <div class="flex-grow">
+                                <p class="px-8 xs:text-[12px] sm:px-4 pt-4 sm:pt-0 font-medium text-custom-dark-grey block">
+                                    Contratto Agevolato 3+2</p>
+                                <p class="px-8 xs:text-[12px] sm:px-4 pt-1 font-light text-custom-dark-grey block sm:mb-1">
+                                    Contratto transitorio</p>
+                            </div>
+                            <div class="flex flex-col sm:px-4 self-center content-center xs:self-start xs:flex-row">
+                                <button class="modifica-button sm:w-full shadow-richiedi border-custom-light-grey">
+                                    Richiedi
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--CARD 2 END-->
+
+            <!--CARD 3-->
+            <div class="contratti-card min-h-[100px] h-full sm:mb-4">
+                <div class="flex justify-between mr-4  sm:justify-start">
+                    <div class="px-8 sm:px-4 py-4">
+                        <div class="flex gap-x-4 items-center mb-2">
+                            <p class="text-custom-blue font-medium text-[18px] sm:text-[14px] mb-1">Test 3</p>
+                            <p class="text-custom-grey font-light text-[14px] sm:text-[12px]">#5929</p>
+                            <a href="#">
+                                <img alt="edit" height="21" src="../img/icon-pencil.svg" width="21">
+                            </a>
+                        </div>
+                        <p class="text-custom-grey font-light text-[14px] sm:text-[12px] italic mb-2">Canone Concordato
+                            Roma</p>
+                        <p class="text-custom-grey font-light text-[14px] sm:text-[12px] italic">Creato il:
+                            10/12/2021</p>
+                    </div>
+                    <div class="flex flex-col gap-1 mt-4 grow">
+                        <div class="progress-bar-concordato ml-auto">
+                            <div class="step first-step step-complete-concordato">
+                                <div class="current-step">1</div>
+                            </div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step last-step"></div>
+                        </div>
+                        <button class="procedura-button card-open">Vedi stato Pratica</button>
+                        <img alt="card-toggle"
+                             class="ml-auto rotate-180 card-close hidden mr-1 my-4 cursor-pointer sm:mt-0"
+                             height="12"
+                             src="../img/select-arrow.svg"
+                             width="20">
+                    </div>
+                </div>
+                <div class="hidden border-t border-custom-grey mt-4 hidden card-full sm:h-full">
+                    <!--STEP 1-->
+                    <div class="flex p-8 sm:px-4">
+                        <div class="step-box bg-custom-blue sm:self-start">
+                            <p class="text-custom-white font-medium mb-1.5">Step 1</p>
+                            <img alt="" height="19" src="../img/check-white.svg" width="24">
+                        </div>
+                        <div class="flex justify-between w-full xs:flex-col">
+                            <div class="flex-grow">
+                                <p class="px-8 sm:px-4 pt-4 xs:text-[12px] sm:pt-0 font-medium text-custom-dark-grey block">
+                                    Foglio
+                                    Caratteristiche</p>
+                                <p class="px-8 xs:text-[12px] sm:px-4 pt-1 font-light text-custom-dark-grey block sm:mb-1">
+                                    Richiesto il
+                                    10/12/21</p>
+                            </div>
+                            <div class="flex flex-col sm:px-4 content-center self-center xs:self-start xs:flex-row">
+                                <button class="scarica-button">
+                                    Scarica
+                                </button>
+                                <button class="modifica-button">
+                                    Modifica
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--STEP 2-->
+                    <div class="flex p-8 sm:px-4">
+                        <div class="step-box bg-custom-light-grey sm:self-start relative">
+                            <div class="dotted-line"></div>
+                            <div>
+                                <p class="text-custom-dark-grey font-medium">Step 2</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between w-full xs:flex-col">
+                            <div class="flex-grow">
+                                <p class="px-8 xs:text-[12px] sm:px-4 pt-4 sm:pt-0 font-medium text-custom-dark-grey block">
+                                    Pre-Calcolo Canone</p>
+                                <p class="text-[12px] px-8 sm:px-4 pt-1 font-light text-custom-dark-grey block sm:mb-1">
+                                    tempistiche di lavorazione della pratica</p>
+                            </div>
+                            <div class="flex flex-col sm:px-4 self-center content-center xs:self-start xs:flex-row">
+                                <button class="modifica-button sm:w-full shadow-richiedi border-custom-light-grey">
+                                    Richiedi
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--STEP 3-->
+                    <div class="flex p-8 sm:px-4">
+                        <div class="step-box bg-custom-light-grey sm:self-start relative">
+                            <div class="dotted-line"></div>
+                            <div>
+                                <p class="text-custom-dark-grey font-medium">Step 3</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between w-full xs:flex-col">
+                            <div class="flex-grow">
+                                <p class="px-8 sm:px-4 xs:text-[12px] pt-4 sm:pt-0 font-medium text-custom-dark-grey block">
+                                    Calcolo del Canone</p>
+                                <p class="text-[12px] px-8 sm:px-4 pt-1 font-light text-custom-dark-grey block sm:mb-1">
+                                    tempistiche di lavorazione della pratica</p>
+                            </div>
+                            <div class="flex flex-col sm:px-4 self-center content-center xs:self-start xs:flex-row">
+                                <button class="modifica-button sm:w-full shadow-richiedi border-custom-light-grey">
+                                    Richiedi
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--STEP 4-->
+                    <div class="flex p-8 sm:px-4">
+                        <div class="step-box bg-custom-light-grey sm:self-start relative">
+                            <div class="dotted-line"></div>
+                            <div>
+                                <p class="text-custom-dark-grey font-medium">Step 4</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between w-full xs:flex-col">
+                            <div class="flex-grow">
+                                <p class="px-8 xs:text-[12px] sm:px-4 pt-4 sm:pt-0 font-medium text-custom-dark-grey block">
+                                    Contratto Agevolato 3+2</p>
+                                <p class="px-8 xs:text-[12px] sm:px-4 pt-1 font-light text-custom-dark-grey block sm:mb-1">
+                                    Contratto transitorio</p>
+                            </div>
+                            <div class="flex flex-col sm:px-4 self-center content-center xs:self-start xs:flex-row">
+                                <button class="modifica-button sm:w-full shadow-richiedi border-custom-light-grey">
+                                    Richiedi
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--CARD 3 END-->
+
+            <!--CARD 4-->
+            <div class="contratti-card min-h-[100px] h-full sm:mb-4">
+                <div class="flex justify-between mr-4  sm:justify-start">
+                    <div class="px-8 sm:px-4 py-4">
+                        <div class="flex gap-x-4 items-center mb-2">
+                            <p class="text-custom-blue font-medium text-[18px] sm:text-[14px] mb-1">Test 4</p>
+                            <p class="text-custom-grey font-light text-[14px] sm:text-[12px]">#5929</p>
+                            <a href="#">
+                                <img alt="edit" height="21" src="../img/icon-pencil.svg" width="21">
+                            </a>
+                        </div>
+                        <p class="text-custom-grey font-light text-[14px] sm:text-[12px] italic mb-2">Canone Concordato
+                            Roma</p>
+                        <p class="text-custom-grey font-light text-[14px] sm:text-[12px] italic">Creato il:
+                            10/12/2021</p>
+                    </div>
+                    <div class="flex flex-col gap-1 mt-4 grow">
+                        <div class="progress-bar-concordato ml-auto">
+                            <div class="step first-step step-complete-concordato"></div>
+                            <div class="step step-complete-concordato">
+                                <div class="current-step">2</div>
+                            </div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step"></div>
+                            <div class="step last-step"></div>
+                        </div>
+                        <button class="procedura-button card-open">Vedi stato Pratica</button>
+                        <img alt="card-toggle"
+                             class="ml-auto rotate-180 card-close hidden mr-1 my-4 cursor-pointer sm:mt-0"
+                             height="12"
+                             src="../img/select-arrow.svg"
+                             width="20">
+                    </div>
+                </div>
+                <div class="hidden border-t border-custom-grey mt-4 hidden card-full sm:h-full">
+                    <!--STEP 1-->
+                    <div class="flex p-8 sm:px-4">
+                        <div class="step-box bg-custom-blue sm:self-start">
+                            <p class="text-custom-white font-medium mb-1.5">Step 1</p>
+                            <img alt="" height="19" src="../img/check-white.svg" width="24">
+                        </div>
+                        <div class="flex justify-between w-full xs:flex-col">
+                            <div class="flex-grow">
+                                <p class="px-8 sm:px-4 pt-4 xs:text-[12px] sm:pt-0 font-medium text-custom-dark-grey block">
+                                    Foglio
+                                    Caratteristiche</p>
+                                <p class="px-8 xs:text-[12px] sm:px-4 pt-1 font-light text-custom-dark-grey block sm:mb-1">
+                                    Richiesto il
+                                    10/12/21</p>
+                            </div>
+                            <div class="flex flex-col sm:px-4 content-center self-center xs:self-start xs:flex-row">
+                                <button class="scarica-button">
+                                    Scarica
+                                </button>
+                                <button class="modifica-button">
+                                    Modifica
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--STEP 2-->
+                    <div class="flex p-8 sm:px-4">
+                        <div class="step-box bg-custom-light-grey sm:self-start relative">
+                            <div class="dotted-line"></div>
+                            <div>
+                                <p class="text-custom-dark-grey font-medium">Step 2</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between w-full xs:flex-col">
+                            <div class="flex-grow">
+                                <p class="px-8 xs:text-[12px] sm:px-4 pt-4 sm:pt-0 font-medium text-custom-dark-grey block">
+                                    Pre-Calcolo Canone</p>
+                                <p class="text-[12px] px-8 sm:px-4 pt-1 font-light text-custom-dark-grey block sm:mb-1">
+                                    tempistiche di lavorazione della pratica</p>
+                            </div>
+                            <div class="flex flex-col sm:px-4 self-center content-center xs:self-start xs:flex-row">
+                                <button class="modifica-button sm:w-full shadow-richiedi border-custom-light-grey">
+                                    Richiedi
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--STEP 3-->
+                    <div class="flex p-8 sm:px-4">
+                        <div class="step-box bg-custom-light-grey sm:self-start relative">
+                            <div class="dotted-line"></div>
+                            <div>
+                                <p class="text-custom-dark-grey font-medium">Step 3</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between w-full xs:flex-col">
+                            <div class="flex-grow">
+                                <p class="px-8 sm:px-4 xs:text-[12px] pt-4 sm:pt-0 font-medium text-custom-dark-grey block">
+                                    Calcolo del Canone</p>
+                                <p class="text-[12px] px-8 sm:px-4 pt-1 font-light text-custom-dark-grey block sm:mb-1">
+                                    tempistiche di lavorazione della pratica</p>
+                            </div>
+                            <div class="flex flex-col sm:px-4 self-center content-center xs:self-start xs:flex-row">
+                                <button class="modifica-button sm:w-full shadow-richiedi border-custom-light-grey">
+                                    Richiedi
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--STEP 4-->
+                    <div class="flex p-8 sm:px-4">
+                        <div class="step-box bg-custom-light-grey sm:self-start relative">
+                            <div class="dotted-line"></div>
+                            <div>
+                                <p class="text-custom-dark-grey font-medium">Step 4</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between w-full xs:flex-col">
+                            <div class="flex-grow">
+                                <p class="px-8 xs:text-[12px] sm:px-4 pt-4 sm:pt-0 font-medium text-custom-dark-grey block">
+                                    Contratto Agevolato 3+2</p>
+                                <p class="px-8 xs:text-[12px] sm:px-4 pt-1 font-light text-custom-dark-grey block sm:mb-1">
+                                    Contratto transitorio</p>
+                            </div>
+                            <div class="flex flex-col sm:px-4 self-center content-center xs:self-start xs:flex-row">
+                                <button class="modifica-button sm:w-full shadow-richiedi border-custom-light-grey">
+                                    Richiedi
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--CARD 4 END-->
 
         </div>
     </div>
